@@ -1,19 +1,19 @@
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c.o: \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/juce_flac_config.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/system/juce_CompilerWarnings.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/system/juce_TargetPlatform.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/juce_flac_config.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/system/juce_CompilerWarnings.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/system/juce_TargetPlatform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/all.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/export.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/assert.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/callback.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/ordinals.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/all.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/export.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/assert.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/callback.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/ordinals.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int8_t.h \
@@ -85,8 +85,8 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_dev_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_mode_t.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/format.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/metadata.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/format.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/metadata.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_char.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_short.h \
@@ -127,7 +127,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_key_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/stream_decoder.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/stream_decoder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h \
@@ -137,12 +137,12 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_common.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/stream_encoder.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/bitmath.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/bitmath.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/../../../ordinals.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/../../../assert.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/../../../compat.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/stream_encoder.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/bitmath.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/bitmath.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/../../../ordinals.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/../../../assert.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/../../../compat.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_header_macro.h \
@@ -170,63 +170,63 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uuid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/gethostuuid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/utime.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/bitreader.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/bitreader.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/bitreader.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/cpu.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/crc.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/macros.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/../assert.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/../compat.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/../endswap.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/deduplication/bitreader_read_rice_signed_block.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/bitwriter.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/bitwriter.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/format.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/../../../format.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/stream_encoder.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/../alloc.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/bitreader.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/cpu.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/crc.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/macros.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/../assert.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/../compat.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/../endswap.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/deduplication/bitreader_read_rice_signed_block.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/bitwriter.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/bitwriter.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/format.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/../../../format.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/stream_encoder.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/../alloc.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_limits.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/cpu.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/crc.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/fixed.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/cpu.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/crc.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/fixed.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/fixed.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/float.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/float.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/format.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/../format.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/lpc_flac.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/lpc.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/deduplication/lpc_compute_autocorrelation_intrin.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/lpc_intrin_avx2.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/lpc_intrin_fma.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/lpc_intrin_neon.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/fixed.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/float.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/float.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/format.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/../format.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/lpc_flac.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/lpc.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/deduplication/lpc_compute_autocorrelation_intrin.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/lpc_intrin_avx2.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/lpc_intrin_fma.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/lpc_intrin_neon.c \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_neon.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_bf16.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_vector_types.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/deduplication/lpc_compute_autocorrelation_intrin_neon.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/lpc_intrin_sse2.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/lpc_intrin_sse41.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/md5.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/md5.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/memory.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/memory.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/stream_decoder.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/deduplication/lpc_compute_autocorrelation_intrin_neon.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/lpc_intrin_sse2.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/lpc_intrin_sse41.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/md5.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/md5.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/memory.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/memory.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/stream_decoder.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_s_ifmt.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_filesec_t.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/protected/stream_decoder.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/protected/../../../stream_decoder.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/stream_encoder_framing.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/stream_encoder_framing.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/window_flac.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/window.h
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/protected/stream_decoder.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/protected/../../../stream_decoder.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/stream_encoder_framing.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/stream_encoder_framing.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/window_flac.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/window.h

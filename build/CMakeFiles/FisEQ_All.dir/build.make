@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/berke/Desktop/teknasyon/plan/FisEQ
+CMAKE_SOURCE_DIR = /Users/berke/Desktop/FisEQ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/berke/Desktop/teknasyon/plan/FisEQ/build
+CMAKE_BINARY_DIR = /Users/berke/Desktop/FisEQ/build
 
 # Utility rule file for FisEQ_All.
 
@@ -81,6 +81,6 @@ CMakeFiles/FisEQ_All.dir/clean:
 .PHONY : CMakeFiles/FisEQ_All.dir/clean
 
 CMakeFiles/FisEQ_All.dir/depend:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/berke/Desktop/teknasyon/plan/FisEQ /Users/berke/Desktop/teknasyon/plan/FisEQ /Users/berke/Desktop/teknasyon/plan/FisEQ/build /Users/berke/Desktop/teknasyon/plan/FisEQ/build /Users/berke/Desktop/teknasyon/plan/FisEQ/build/CMakeFiles/FisEQ_All.dir/DependInfo.cmake "--color=$(COLOR)" FisEQ_All
+	cd /Users/berke/Desktop/FisEQ/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/berke/Desktop/FisEQ /Users/berke/Desktop/FisEQ /Users/berke/Desktop/FisEQ/build /Users/berke/Desktop/FisEQ/build /Users/berke/Desktop/FisEQ/build/CMakeFiles/FisEQ_All.dir/DependInfo.cmake "--color=$(COLOR)" FisEQ_All
 .PHONY : CMakeFiles/FisEQ_All.dir/depend
 

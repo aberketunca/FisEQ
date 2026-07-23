@@ -1,16 +1,16 @@
 extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.o: \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/system/juce_CompilerWarnings.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/system/juce_TargetPlatform.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/system/juce_CompilerWarnings.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/system/juce_TargetPlatform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcapimin.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jinclude.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jconfig.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcapimin.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jinclude.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jconfig.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_header_macro.h \
@@ -108,32 +108,32 @@ extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juc
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jpeglib.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jmorecfg.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jpegint.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jerror.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcapistd.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jpeglib.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jmorecfg.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jpegint.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jerror.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcapistd.c \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jccoefct.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcinit.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcmainct.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcmarker.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcmaster.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcomapi.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcparam.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcprepct.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcsample.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jmemmgr.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jmemsys.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jmemnobs.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jquant2.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jutils.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jdinput.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcarith.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jchuff.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jaricom.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jfdctint.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jdct.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jfdctflt.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jfdctfst.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jdhuff.c
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jccoefct.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcinit.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcmainct.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcmarker.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcmaster.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcomapi.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcparam.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcprepct.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcsample.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jmemmgr.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jmemsys.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jmemnobs.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jquant2.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jutils.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jdinput.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jcarith.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jchuff.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jaricom.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jfdctint.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jdct.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jfdctflt.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jfdctfst.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/jpglib/jdhuff.c

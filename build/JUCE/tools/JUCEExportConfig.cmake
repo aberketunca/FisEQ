@@ -54,11 +54,11 @@ endif()
 
 check_required_components("JUCE")
 
-set(JUCE_MODULES_DIR "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules" CACHE INTERNAL
+set(JUCE_MODULES_DIR "/Users/berke/Desktop/FisEQ/JUCE/modules" CACHE INTERNAL
     "The path to JUCE modules")
 
-include("/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/JUCEModuleSupport.cmake")
-include("/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/JUCEUtils.cmake")
+include("/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/JUCEModuleSupport.cmake")
+include("/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/JUCEUtils.cmake")
 
 set(_juce_modules
     juce_analytics
@@ -114,7 +114,7 @@ unset(_targets_defined)
 unset(_targets_expected)
 
 foreach(_juce_module IN LISTS _juce_modules)
-    juce_add_module("/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/${_juce_module}" ALIAS_NAMESPACE juce)
+    juce_add_module("/Users/berke/Desktop/FisEQ/JUCE/modules/${_juce_module}" ALIAS_NAMESPACE juce)
 endforeach()
 
 unset(_juce_modules)

@@ -1,17 +1,17 @@
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_zlib.c.o: \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/juce_core_zlib.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/system/juce_CompilerWarnings.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/system/juce_TargetPlatform.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/juce_core_zlib.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/system/juce_CompilerWarnings.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/system/juce_TargetPlatform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/adler32.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/zutil.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/zlib.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/zconf.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/adler32.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/zutil.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/zlib.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/zconf.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_header_macro.h \
@@ -151,22 +151,22 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_zlib.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc_type.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_ptrcheck.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/compress.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/crc32.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/crc32.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/deflate.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/deflate.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/inffast.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/inftrees.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/inflate.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/inffast.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/inflate.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/inftrees.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/inffixed.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/trees.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/trees.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/zutil.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/gzguts.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/compress.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/crc32.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/crc32.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/deflate.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/deflate.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/inffast.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/inftrees.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/inflate.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/inffast.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/inflate.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/inftrees.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/inffixed.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/trees.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/trees.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/zutil.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/gzguts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h \

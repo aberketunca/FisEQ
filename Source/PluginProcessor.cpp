@@ -4,8 +4,26 @@
 FisEQAudioProcessor::FisEQAudioProcessor()
     : AudioProcessor(BusesProperties()
         .withInput("Input", juce::AudioChannelSet::stereo(), true)
-        .withOutput("Output", juce::AudioChannelSet::stereo(), true))
+        .withOutput("Output", juce::AudioChannelSet::stereo(), true)),
+      parameters(*this,
+                 nullptr,
+                 "PARAMETERS",
+                 createParameterLayout())
 {
+}
+
+juce::AudioProcessorValueTreeState::ParameterLayout
+FisEQAudioProcessor::createParameterLayout()
+{
+    std::vector<std::unique_ptr<juce::RangedAudioParameter>> params;
+
+    params.push_back(std::make_unique<juce::AudioParameterFloat>(
+        "GAIN",
+        "Gain",
+        juce::NormalisableRange<float>(-24.0f, 24.0f, 0.1f),
+        0.0f));
+
+    return { params.begin(), params.end() };
 }
 
 void FisEQAudioProcessor::prepareToPlay(double sampleRate, int samplesPerBlock)

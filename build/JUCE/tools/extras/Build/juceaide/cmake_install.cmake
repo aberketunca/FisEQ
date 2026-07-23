@@ -1,4 +1,4 @@
-# Install script for directory: /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/juceaide
+# Install script for directory: /Users/berke/Desktop/FisEQ/JUCE/extras/Build/juceaide
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools/extras/Build/juceaide/install_local_manifest.txt"
+  file(WRITE "/Users/berke/Desktop/FisEQ/build/JUCE/tools/extras/Build/juceaide/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

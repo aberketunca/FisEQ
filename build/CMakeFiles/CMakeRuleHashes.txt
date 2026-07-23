@@ -1,3 +1,3 @@
 # Hashes of file build rules.
-4c1d4e78a7b853f9c998b323cc9bd709 FisEQ_artefacts/JuceLibraryCode/FisEQ_Standalone/PkgInfo
-adac30cc27dc75294e424fdfd375049c FisEQ_artefacts/JuceLibraryCode/FisEQ_VST3/PkgInfo
+57bf8502b1da0fe59c581bf43a3b9cd6 FisEQ_artefacts/JuceLibraryCode/FisEQ_Standalone/PkgInfo
+77ad11fab0fee9adc1af7c5b69df0124 FisEQ_artefacts/JuceLibraryCode/FisEQ_VST3/PkgInfo

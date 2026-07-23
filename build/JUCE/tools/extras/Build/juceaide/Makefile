@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE
+CMAKE_SOURCE_DIR = /Users/berke/Desktop/FisEQ/JUCE
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools
+CMAKE_BINARY_DIR = /Users/berke/Desktop/FisEQ/build/JUCE/tools
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(CMAKE_COMMAND) -E cmake_progress_start /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools/CMakeFiles /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools/extras/Build/juceaide//CMakeFiles/progress.marks
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extras/Build/juceaide/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools/CMakeFiles 0
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(CMAKE_COMMAND) -E cmake_progress_start /Users/berke/Desktop/FisEQ/build/JUCE/tools/CMakeFiles /Users/berke/Desktop/FisEQ/build/JUCE/tools/extras/Build/juceaide//CMakeFiles/progress.marks
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extras/Build/juceaide/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/berke/Desktop/FisEQ/build/JUCE/tools/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extras/Build/juceaide/clean
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extras/Build/juceaide/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extras/Build/juceaide/preinstall
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extras/Build/juceaide/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extras/Build/juceaide/preinstall
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extras/Build/juceaide/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(CMAKE_COMMAND) -P /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools/CMakeFiles/VerifyGlobs.cmake
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(CMAKE_COMMAND) -P /Users/berke/Desktop/FisEQ/build/JUCE/tools/CMakeFiles/VerifyGlobs.cmake
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 extras/Build/juceaide/CMakeFiles/juceaide.dir/rule:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extras/Build/juceaide/CMakeFiles/juceaide.dir/rule
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extras/Build/juceaide/CMakeFiles/juceaide.dir/rule
 .PHONY : extras/Build/juceaide/CMakeFiles/juceaide.dir/rule
 
 # Convenience name for target.
@@ -173,7 +173,7 @@ juceaide: extras/Build/juceaide/CMakeFiles/juceaide.dir/rule
 
 # fast build rule for target.
 juceaide/fast:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/build
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/build
 .PHONY : juceaide/fast
 
 Main.o: Main.cpp.o
@@ -181,7 +181,7 @@ Main.o: Main.cpp.o
 
 # target to build an object file
 Main.cpp.o:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/Main.cpp.o
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/Main.cpp.o
 .PHONY : Main.cpp.o
 
 Main.i: Main.cpp.i
@@ -189,7 +189,7 @@ Main.i: Main.cpp.i
 
 # target to preprocess a source file
 Main.cpp.i:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/Main.cpp.i
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/Main.cpp.i
 .PHONY : Main.cpp.i
 
 Main.s: Main.cpp.s
@@ -197,7 +197,7 @@ Main.s: Main.cpp.s
 
 # target to generate assembly for a file
 Main.cpp.s:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/Main.cpp.s
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/Main.cpp.s
 .PHONY : Main.cpp.s
 
 __/__/__/modules/juce_core/juce_core.o: __/__/__/modules/juce_core/juce_core.mm.o
@@ -205,7 +205,7 @@ __/__/__/modules/juce_core/juce_core.o: __/__/__/modules/juce_core/juce_core.mm.
 
 # target to build an object file
 __/__/__/modules/juce_core/juce_core.mm.o:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core.mm.o
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core.mm.o
 .PHONY : __/__/__/modules/juce_core/juce_core.mm.o
 
 __/__/__/modules/juce_core/juce_core.i: __/__/__/modules/juce_core/juce_core.mm.i
@@ -213,7 +213,7 @@ __/__/__/modules/juce_core/juce_core.i: __/__/__/modules/juce_core/juce_core.mm.
 
 # target to preprocess a source file
 __/__/__/modules/juce_core/juce_core.mm.i:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core.mm.i
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core.mm.i
 .PHONY : __/__/__/modules/juce_core/juce_core.mm.i
 
 __/__/__/modules/juce_core/juce_core.s: __/__/__/modules/juce_core/juce_core.mm.s
@@ -221,7 +221,7 @@ __/__/__/modules/juce_core/juce_core.s: __/__/__/modules/juce_core/juce_core.mm.
 
 # target to generate assembly for a file
 __/__/__/modules/juce_core/juce_core.mm.s:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core.mm.s
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core.mm.s
 .PHONY : __/__/__/modules/juce_core/juce_core.mm.s
 
 __/__/__/modules/juce_core/juce_core_CompilationTime.o: __/__/__/modules/juce_core/juce_core_CompilationTime.cpp.o
@@ -229,7 +229,7 @@ __/__/__/modules/juce_core/juce_core_CompilationTime.o: __/__/__/modules/juce_co
 
 # target to build an object file
 __/__/__/modules/juce_core/juce_core_CompilationTime.cpp.o:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core_CompilationTime.cpp.o
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core_CompilationTime.cpp.o
 .PHONY : __/__/__/modules/juce_core/juce_core_CompilationTime.cpp.o
 
 __/__/__/modules/juce_core/juce_core_CompilationTime.i: __/__/__/modules/juce_core/juce_core_CompilationTime.cpp.i
@@ -237,7 +237,7 @@ __/__/__/modules/juce_core/juce_core_CompilationTime.i: __/__/__/modules/juce_co
 
 # target to preprocess a source file
 __/__/__/modules/juce_core/juce_core_CompilationTime.cpp.i:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core_CompilationTime.cpp.i
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core_CompilationTime.cpp.i
 .PHONY : __/__/__/modules/juce_core/juce_core_CompilationTime.cpp.i
 
 __/__/__/modules/juce_core/juce_core_CompilationTime.s: __/__/__/modules/juce_core/juce_core_CompilationTime.cpp.s
@@ -245,7 +245,7 @@ __/__/__/modules/juce_core/juce_core_CompilationTime.s: __/__/__/modules/juce_co
 
 # target to generate assembly for a file
 __/__/__/modules/juce_core/juce_core_CompilationTime.cpp.s:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core_CompilationTime.cpp.s
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core_CompilationTime.cpp.s
 .PHONY : __/__/__/modules/juce_core/juce_core_CompilationTime.cpp.s
 
 __/__/__/modules/juce_core/juce_core_zlib.o: __/__/__/modules/juce_core/juce_core_zlib.c.o
@@ -253,7 +253,7 @@ __/__/__/modules/juce_core/juce_core_zlib.o: __/__/__/modules/juce_core/juce_cor
 
 # target to build an object file
 __/__/__/modules/juce_core/juce_core_zlib.c.o:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core_zlib.c.o
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core_zlib.c.o
 .PHONY : __/__/__/modules/juce_core/juce_core_zlib.c.o
 
 __/__/__/modules/juce_core/juce_core_zlib.i: __/__/__/modules/juce_core/juce_core_zlib.c.i
@@ -261,7 +261,7 @@ __/__/__/modules/juce_core/juce_core_zlib.i: __/__/__/modules/juce_core/juce_cor
 
 # target to preprocess a source file
 __/__/__/modules/juce_core/juce_core_zlib.c.i:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core_zlib.c.i
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core_zlib.c.i
 .PHONY : __/__/__/modules/juce_core/juce_core_zlib.c.i
 
 __/__/__/modules/juce_core/juce_core_zlib.s: __/__/__/modules/juce_core/juce_core_zlib.c.s
@@ -269,7 +269,7 @@ __/__/__/modules/juce_core/juce_core_zlib.s: __/__/__/modules/juce_core/juce_cor
 
 # target to generate assembly for a file
 __/__/__/modules/juce_core/juce_core_zlib.c.s:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core_zlib.c.s
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core_zlib.c.s
 .PHONY : __/__/__/modules/juce_core/juce_core_zlib.c.s
 
 __/__/__/modules/juce_events/juce_events.o: __/__/__/modules/juce_events/juce_events.mm.o
@@ -277,7 +277,7 @@ __/__/__/modules/juce_events/juce_events.o: __/__/__/modules/juce_events/juce_ev
 
 # target to build an object file
 __/__/__/modules/juce_events/juce_events.mm.o:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_events/juce_events.mm.o
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_events/juce_events.mm.o
 .PHONY : __/__/__/modules/juce_events/juce_events.mm.o
 
 __/__/__/modules/juce_events/juce_events.i: __/__/__/modules/juce_events/juce_events.mm.i
@@ -285,7 +285,7 @@ __/__/__/modules/juce_events/juce_events.i: __/__/__/modules/juce_events/juce_ev
 
 # target to preprocess a source file
 __/__/__/modules/juce_events/juce_events.mm.i:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_events/juce_events.mm.i
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_events/juce_events.mm.i
 .PHONY : __/__/__/modules/juce_events/juce_events.mm.i
 
 __/__/__/modules/juce_events/juce_events.s: __/__/__/modules/juce_events/juce_events.mm.s
@@ -293,7 +293,7 @@ __/__/__/modules/juce_events/juce_events.s: __/__/__/modules/juce_events/juce_ev
 
 # target to generate assembly for a file
 __/__/__/modules/juce_events/juce_events.mm.s:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_events/juce_events.mm.s
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_events/juce_events.mm.s
 .PHONY : __/__/__/modules/juce_events/juce_events.mm.s
 
 __/__/__/modules/juce_graphics/juce_graphics.o: __/__/__/modules/juce_graphics/juce_graphics.mm.o
@@ -301,7 +301,7 @@ __/__/__/modules/juce_graphics/juce_graphics.o: __/__/__/modules/juce_graphics/j
 
 # target to build an object file
 __/__/__/modules/juce_graphics/juce_graphics.mm.o:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics.mm.o
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics.mm.o
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics.mm.o
 
 __/__/__/modules/juce_graphics/juce_graphics.i: __/__/__/modules/juce_graphics/juce_graphics.mm.i
@@ -309,7 +309,7 @@ __/__/__/modules/juce_graphics/juce_graphics.i: __/__/__/modules/juce_graphics/j
 
 # target to preprocess a source file
 __/__/__/modules/juce_graphics/juce_graphics.mm.i:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics.mm.i
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics.mm.i
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics.mm.i
 
 __/__/__/modules/juce_graphics/juce_graphics.s: __/__/__/modules/juce_graphics/juce_graphics.mm.s
@@ -317,7 +317,7 @@ __/__/__/modules/juce_graphics/juce_graphics.s: __/__/__/modules/juce_graphics/j
 
 # target to generate assembly for a file
 __/__/__/modules/juce_graphics/juce_graphics.mm.s:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics.mm.s
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics.mm.s
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics.mm.s
 
 __/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.o: __/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
@@ -325,7 +325,7 @@ __/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.o: __/__/__/modules/juce_g
 
 # target to build an object file
 __/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
 
 __/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.i: __/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
@@ -333,7 +333,7 @@ __/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.i: __/__/__/modules/juce_g
 
 # target to preprocess a source file
 __/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i
 
 __/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.s: __/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
@@ -341,7 +341,7 @@ __/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.s: __/__/__/modules/juce_g
 
 # target to generate assembly for a file
 __/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s
 
 __/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.o: __/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
@@ -349,7 +349,7 @@ __/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.o: __/__/__/modules/juce_
 
 # target to build an object file
 __/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.o:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
 
 __/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.i: __/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
@@ -357,7 +357,7 @@ __/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.i: __/__/__/modules/juce_
 
 # target to preprocess a source file
 __/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.i:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.i
 
 __/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.s: __/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
@@ -365,7 +365,7 @@ __/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.s: __/__/__/modules/juce_
 
 # target to generate assembly for a file
 __/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.s:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.s
 
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_1.o: __/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.o
@@ -373,7 +373,7 @@ __/__/__/modules/juce_graphics/juce_graphics_libjpg_1.o: __/__/__/modules/juce_g
 
 # target to build an object file
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.o:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.o
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.o
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.o
 
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_1.i: __/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.i
@@ -381,7 +381,7 @@ __/__/__/modules/juce_graphics/juce_graphics_libjpg_1.i: __/__/__/modules/juce_g
 
 # target to preprocess a source file
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.i:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.i
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.i
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.i
 
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_1.s: __/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.s
@@ -389,7 +389,7 @@ __/__/__/modules/juce_graphics/juce_graphics_libjpg_1.s: __/__/__/modules/juce_g
 
 # target to generate assembly for a file
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.s:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.s
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.s
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.s
 
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_2.o: __/__/__/modules/juce_graphics/juce_graphics_libjpg_2.c.o
@@ -397,7 +397,7 @@ __/__/__/modules/juce_graphics/juce_graphics_libjpg_2.o: __/__/__/modules/juce_g
 
 # target to build an object file
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_2.c.o:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_2.c.o
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_2.c.o
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_libjpg_2.c.o
 
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_2.i: __/__/__/modules/juce_graphics/juce_graphics_libjpg_2.c.i
@@ -405,7 +405,7 @@ __/__/__/modules/juce_graphics/juce_graphics_libjpg_2.i: __/__/__/modules/juce_g
 
 # target to preprocess a source file
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_2.c.i:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_2.c.i
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_2.c.i
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_libjpg_2.c.i
 
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_2.s: __/__/__/modules/juce_graphics/juce_graphics_libjpg_2.c.s
@@ -413,7 +413,7 @@ __/__/__/modules/juce_graphics/juce_graphics_libjpg_2.s: __/__/__/modules/juce_g
 
 # target to generate assembly for a file
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_2.c.s:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_2.c.s
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_2.c.s
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_libjpg_2.c.s
 
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_3.o: __/__/__/modules/juce_graphics/juce_graphics_libjpg_3.c.o
@@ -421,7 +421,7 @@ __/__/__/modules/juce_graphics/juce_graphics_libjpg_3.o: __/__/__/modules/juce_g
 
 # target to build an object file
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_3.c.o:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_3.c.o
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_3.c.o
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_libjpg_3.c.o
 
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_3.i: __/__/__/modules/juce_graphics/juce_graphics_libjpg_3.c.i
@@ -429,7 +429,7 @@ __/__/__/modules/juce_graphics/juce_graphics_libjpg_3.i: __/__/__/modules/juce_g
 
 # target to preprocess a source file
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_3.c.i:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_3.c.i
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_3.c.i
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_libjpg_3.c.i
 
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_3.s: __/__/__/modules/juce_graphics/juce_graphics_libjpg_3.c.s
@@ -437,7 +437,7 @@ __/__/__/modules/juce_graphics/juce_graphics_libjpg_3.s: __/__/__/modules/juce_g
 
 # target to generate assembly for a file
 __/__/__/modules/juce_graphics/juce_graphics_libjpg_3.c.s:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_3.c.s
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_3.c.s
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_libjpg_3.c.s
 
 __/__/__/modules/juce_graphics/juce_graphics_libpng.o: __/__/__/modules/juce_graphics/juce_graphics_libpng.c.o
@@ -445,7 +445,7 @@ __/__/__/modules/juce_graphics/juce_graphics_libpng.o: __/__/__/modules/juce_gra
 
 # target to build an object file
 __/__/__/modules/juce_graphics/juce_graphics_libpng.c.o:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libpng.c.o
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libpng.c.o
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_libpng.c.o
 
 __/__/__/modules/juce_graphics/juce_graphics_libpng.i: __/__/__/modules/juce_graphics/juce_graphics_libpng.c.i
@@ -453,7 +453,7 @@ __/__/__/modules/juce_graphics/juce_graphics_libpng.i: __/__/__/modules/juce_gra
 
 # target to preprocess a source file
 __/__/__/modules/juce_graphics/juce_graphics_libpng.c.i:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libpng.c.i
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libpng.c.i
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_libpng.c.i
 
 __/__/__/modules/juce_graphics/juce_graphics_libpng.s: __/__/__/modules/juce_graphics/juce_graphics_libpng.c.s
@@ -461,7 +461,7 @@ __/__/__/modules/juce_graphics/juce_graphics_libpng.s: __/__/__/modules/juce_gra
 
 # target to generate assembly for a file
 __/__/__/modules/juce_graphics/juce_graphics_libpng.c.s:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libpng.c.s
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libpng.c.s
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_libpng.c.s
 
 __/__/__/modules/juce_graphics/juce_graphics_lunasvg.o: __/__/__/modules/juce_graphics/juce_graphics_lunasvg.c.o
@@ -469,7 +469,7 @@ __/__/__/modules/juce_graphics/juce_graphics_lunasvg.o: __/__/__/modules/juce_gr
 
 # target to build an object file
 __/__/__/modules/juce_graphics/juce_graphics_lunasvg.c.o:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_lunasvg.c.o
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_lunasvg.c.o
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_lunasvg.c.o
 
 __/__/__/modules/juce_graphics/juce_graphics_lunasvg.i: __/__/__/modules/juce_graphics/juce_graphics_lunasvg.c.i
@@ -477,7 +477,7 @@ __/__/__/modules/juce_graphics/juce_graphics_lunasvg.i: __/__/__/modules/juce_gr
 
 # target to preprocess a source file
 __/__/__/modules/juce_graphics/juce_graphics_lunasvg.c.i:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_lunasvg.c.i
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_lunasvg.c.i
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_lunasvg.c.i
 
 __/__/__/modules/juce_graphics/juce_graphics_lunasvg.s: __/__/__/modules/juce_graphics/juce_graphics_lunasvg.c.s
@@ -485,7 +485,7 @@ __/__/__/modules/juce_graphics/juce_graphics_lunasvg.s: __/__/__/modules/juce_gr
 
 # target to generate assembly for a file
 __/__/__/modules/juce_graphics/juce_graphics_lunasvg.c.s:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_lunasvg.c.s
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_lunasvg.c.s
 .PHONY : __/__/__/modules/juce_graphics/juce_graphics_lunasvg.c.s
 
 __/juce_build_tools/juce_build_tools.o: __/juce_build_tools/juce_build_tools.cpp.o
@@ -493,7 +493,7 @@ __/juce_build_tools/juce_build_tools.o: __/juce_build_tools/juce_build_tools.cpp
 
 # target to build an object file
 __/juce_build_tools/juce_build_tools.cpp.o:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/juce_build_tools/juce_build_tools.cpp.o
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/juce_build_tools/juce_build_tools.cpp.o
 .PHONY : __/juce_build_tools/juce_build_tools.cpp.o
 
 __/juce_build_tools/juce_build_tools.i: __/juce_build_tools/juce_build_tools.cpp.i
@@ -501,7 +501,7 @@ __/juce_build_tools/juce_build_tools.i: __/juce_build_tools/juce_build_tools.cpp
 
 # target to preprocess a source file
 __/juce_build_tools/juce_build_tools.cpp.i:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/juce_build_tools/juce_build_tools.cpp.i
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/juce_build_tools/juce_build_tools.cpp.i
 .PHONY : __/juce_build_tools/juce_build_tools.cpp.i
 
 __/juce_build_tools/juce_build_tools.s: __/juce_build_tools/juce_build_tools.cpp.s
@@ -509,7 +509,7 @@ __/juce_build_tools/juce_build_tools.s: __/juce_build_tools/juce_build_tools.cpp
 
 # target to generate assembly for a file
 __/juce_build_tools/juce_build_tools.cpp.s:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/juce_build_tools/juce_build_tools.cpp.s
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(MAKE) $(MAKESILENT) -f extras/Build/juceaide/CMakeFiles/juceaide.dir/build.make extras/Build/juceaide/CMakeFiles/juceaide.dir/__/juce_build_tools/juce_build_tools.cpp.s
 .PHONY : __/juce_build_tools/juce_build_tools.cpp.s
 
 # Help Target
@@ -578,7 +578,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(CMAKE_COMMAND) -P /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools/CMakeFiles/VerifyGlobs.cmake
-	cd /Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/tools && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(CMAKE_COMMAND) -P /Users/berke/Desktop/FisEQ/build/JUCE/tools/CMakeFiles/VerifyGlobs.cmake
+	cd /Users/berke/Desktop/FisEQ/build/JUCE/tools && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

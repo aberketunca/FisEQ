@@ -1,16 +1,16 @@
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o: \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/system/juce_CompilerWarnings.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/system/juce_TargetPlatform.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/system/juce_CompilerWarnings.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/system/juce_TargetPlatform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-blend.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-private.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/../include/plutovg.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-blend.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-private.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/../include/plutovg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdbool.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdatomic.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
@@ -44,7 +44,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uintmax_t.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-utils.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-utils.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h \
@@ -114,8 +114,8 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-canvas.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-font.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-canvas.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-font.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h \
@@ -125,7 +125,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_off_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-stb-truetype.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-stb-truetype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h \
@@ -164,20 +164,20 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_blksize_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ino64_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_nlink_t.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-ft-math.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-ft-math.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-ft-types.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-ft-raster.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-ft-raster.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-ft-math.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-ft-math.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-ft-types.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-ft-raster.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-ft-raster.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/setjmp.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-ft-stroker.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-ft-stroker.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-matrix.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-paint.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-path.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-rasterize.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-surface.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-stb-image-write.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-ft-stroker.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-ft-stroker.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-matrix.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-paint.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-path.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-rasterize.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-surface.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-stb-image-write.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_header_macro.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg___gnuc_va_list.h \
@@ -185,4 +185,4 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o: \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_va_arg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg___va_copy.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_va_copy.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-stb-image.h
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/drawables/lunasvg/plutovg/source/plutovg-stb-image.h

@@ -8,6 +8,10 @@ public:
     FisEQAudioProcessor();
     ~FisEQAudioProcessor() override = default;
 
+    static juce::AudioProcessorValueTreeState::ParameterLayout createParameterLayout();
+
+    juce::AudioProcessorValueTreeState parameters;
+
     void prepareToPlay(double sampleRate, int samplesPerBlock) override;
     void releaseResources() override;
 

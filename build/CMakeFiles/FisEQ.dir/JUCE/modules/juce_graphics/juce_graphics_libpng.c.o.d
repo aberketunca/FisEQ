@@ -1,15 +1,15 @@
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o: \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/juce_graphics_libpng.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/system/juce_CompilerWarnings.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/system/juce_TargetPlatform.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_libpng.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/system/juce_CompilerWarnings.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/system/juce_TargetPlatform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/png.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngpriv.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/png.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngpriv.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h \
@@ -62,9 +62,9 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_common.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pnglibconf.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/png.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngconf.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pnglibconf.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/png.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngconf.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/limits.h \
@@ -97,9 +97,9 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o: \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngstruct.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/zlib.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/zip/zlib/zconf.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngstruct.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/zlib.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/zip/zlib/zconf.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/endian.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/endian.h \
@@ -136,17 +136,17 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o: \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_va_arg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg___va_copy.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_va_copy.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pnginfo.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngdebug.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngerror.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngget.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngmem.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngread.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pnginfo.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngdebug.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngerror.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngget.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngmem.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngread.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/errno.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngpread.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngrio.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngrtran.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngpread.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngrio.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngrtran.c \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_neon.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h \
@@ -158,14 +158,14 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uintmax_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_bf16.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_vector_types.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngrutil.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngset.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngtrans.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngwio.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngwrite.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngwtran.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngwutil.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/arm/arm_init.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/arm/../pngpriv.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/arm/filter_neon_intrinsics.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/arm/palette_neon_intrinsics.c
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngrutil.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngset.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngtrans.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngwio.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngwrite.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngwtran.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/pngwutil.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/arm/arm_init.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/arm/../pngpriv.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/arm/filter_neon_intrinsics.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/image_formats/pnglib/arm/palette_neon_intrinsics.c

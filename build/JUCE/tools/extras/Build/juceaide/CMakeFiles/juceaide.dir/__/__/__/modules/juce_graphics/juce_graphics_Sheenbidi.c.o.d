@@ -1,18 +1,18 @@
 extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.o: \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/system/juce_CompilerWarnings.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_core/system/juce_TargetPlatform.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/system/juce_CompilerWarnings.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/system/juce_TargetPlatform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SheenBidi.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBConfig.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SheenBidi.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBAlgorithm.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBBase.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SheenBidi.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBConfig.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SheenBidi.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBAlgorithm.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBBase.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int8_t.h \
@@ -35,23 +35,23 @@ extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juc
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uintmax_t.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBBidiType.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBCodepointSequence.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBCodepoint.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBGeneralCategory.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBScript.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBParagraph.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBLine.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBRun.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBMirrorLocator.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBScriptLocator.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBVersion.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/BidiChain.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBBase.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/BidiChain.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/BidiTypeLookup.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/BidiTypeLookup.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/BracketQueue.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBBidiType.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBCodepointSequence.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBCodepoint.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBGeneralCategory.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBScript.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBParagraph.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBLine.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBRun.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBMirrorLocator.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBScriptLocator.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Headers/SheenBidi/SBVersion.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/BidiChain.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBBase.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/BidiChain.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/BidiTypeLookup.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/BidiTypeLookup.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/BracketQueue.c \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_header_macro.h \
@@ -62,25 +62,25 @@ extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juc
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_max_align_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_offsetof.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/Object.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBAssert.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/Object.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBAssert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBCodepoint.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/BracketQueue.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/GeneralCategoryLookup.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/GeneralCategoryLookup.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/IsolatingRun.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/BracketType.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/LevelRun.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/RunExtrema.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/RunKind.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/PairingLookup.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBLog.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/IsolatingRun.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBCodepointSequence.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/LevelRun.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/Object.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBCodepoint.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/BracketQueue.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/GeneralCategoryLookup.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/GeneralCategoryLookup.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/IsolatingRun.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/BracketType.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/LevelRun.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/RunExtrema.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/RunKind.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/PairingLookup.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBLog.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/IsolatingRun.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBCodepointSequence.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/LevelRun.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/Object.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h \
@@ -129,26 +129,26 @@ extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juc
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_dev_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_mode_t.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/PairingLookup.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/RunQueue.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/RunQueue.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBAlgorithm.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBParagraph.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBAlgorithm.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBBase.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBCodepoint.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/ScriptLookup.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBCodepointSequence.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBLine.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBLine.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBLog.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBMirrorLocator.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBMirrorLocator.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBParagraph.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/StatusStack.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBScriptLocator.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/ScriptStack.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBScriptLocator.h \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/ScriptLookup.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/ScriptStack.c \
-  /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/StatusStack.c
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/PairingLookup.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/RunQueue.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/RunQueue.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBAlgorithm.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBParagraph.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBAlgorithm.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBBase.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBCodepoint.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/ScriptLookup.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBCodepointSequence.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBLine.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBLine.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBLog.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBMirrorLocator.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBMirrorLocator.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBParagraph.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/StatusStack.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBScriptLocator.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/ScriptStack.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/SBScriptLocator.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/ScriptLookup.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/ScriptStack.c \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/unicode/sheenbidi/Source/StatusStack.c

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/berke/Desktop/teknasyon/plan/FisEQ
+# Install script for directory: /Users/berke/Desktop/FisEQ
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,13 +39,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/cmake_install.cmake")
+  include("/Users/berke/Desktop/FisEQ/build/JUCE/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/berke/Desktop/teknasyon/plan/FisEQ/build/install_local_manifest.txt"
+  file(WRITE "/Users/berke/Desktop/FisEQ/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -61,6 +61,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/berke/Desktop/teknasyon/plan/FisEQ/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/berke/Desktop/FisEQ/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

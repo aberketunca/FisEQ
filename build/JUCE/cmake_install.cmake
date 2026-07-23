@@ -1,4 +1,4 @@
-# Install script for directory: /Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE
+# Install script for directory: /Users/berke/Desktop/FisEQ/JUCE
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,48 +39,48 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/modules/cmake_install.cmake")
+  include("/Users/berke/Desktop/FisEQ/build/JUCE/modules/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/extras/Build/cmake_install.cmake")
+  include("/Users/berke/Desktop/FisEQ/build/JUCE/extras/Build/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/JUCE-9.0.0" TYPE FILE FILES
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/JUCEConfigVersion.cmake"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/JUCEConfig.cmake"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/FindCppwinrt.cmake"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/FindWebView2.cmake"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/FindWindowsMIDIServices.cmake"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/JUCECheckAtomic.cmake"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/JUCEHelperTargets.cmake"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/JUCEModuleSupport.cmake"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/JUCEUtils.cmake"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/JuceLV2Defines.h.in"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/LaunchScreen.storyboard"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/PIPAudioProcessor.cpp.in"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/PIPAudioProcessorWithARA.cpp.in"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/PIPComponent.cpp.in"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/PIPConsole.cpp.in"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/RecentFilesMenuTemplate.nib"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/UnityPluginGUIScript.cs.in"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/bundleplaceholder.mm"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/checkBundleSigning.cmake"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/copyDir.cmake"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/juce_LinuxSubprocessHelper.cpp"
-    "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/juce_runtime_arch_detection.cpp"
+    "/Users/berke/Desktop/FisEQ/build/JUCE/JUCEConfigVersion.cmake"
+    "/Users/berke/Desktop/FisEQ/build/JUCE/JUCEConfig.cmake"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/FindCppwinrt.cmake"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/FindWebView2.cmake"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/FindWindowsMIDIServices.cmake"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/JUCECheckAtomic.cmake"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/JUCEHelperTargets.cmake"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/JUCEModuleSupport.cmake"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/JUCEUtils.cmake"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/JuceLV2Defines.h.in"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/LaunchScreen.storyboard"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/PIPAudioProcessor.cpp.in"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/PIPAudioProcessorWithARA.cpp.in"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/PIPComponent.cpp.in"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/PIPConsole.cpp.in"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/RecentFilesMenuTemplate.nib"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/UnityPluginGUIScript.cs.in"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/bundleplaceholder.mm"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/checkBundleSigning.cmake"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/copyDir.cmake"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/juce_LinuxSubprocessHelper.cpp"
+    "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/juce_runtime_arch_detection.cpp"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/JUCE-9.0.0" TYPE DIRECTORY FILES "/Users/berke/Desktop/teknasyon/plan/FisEQ/JUCE/extras/Build/CMake/juce_vst3_helper")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/JUCE-9.0.0" TYPE DIRECTORY FILES "/Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/juce_vst3_helper")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/berke/Desktop/teknasyon/plan/FisEQ/build/JUCE/install_local_manifest.txt"
+  file(WRITE "/Users/berke/Desktop/FisEQ/build/JUCE/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
