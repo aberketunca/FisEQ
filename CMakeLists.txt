@@ -29,6 +29,9 @@ target_sources(FisEQ PRIVATE
     Source/PluginProcessor.h
     Source/PluginEditor.cpp
     Source/PluginEditor.h
+    
+    Source/DSP/EQBand.cpp
+    Source/DSP/EQBand.h
 )
 
 target_compile_definitions(FisEQ PRIVATE
