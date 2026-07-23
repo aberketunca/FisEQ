@@ -1,0 +1,3 @@
+/Users/berke/Desktop/teknasyon/plan/FisEQ/build/vst3_helpers/FisEQ/CMakeFiles/vst3_helper.dir
+/Users/berke/Desktop/teknasyon/plan/FisEQ/build/vst3_helpers/FisEQ/CMakeFiles/edit_cache.dir
+/Users/berke/Desktop/teknasyon/plan/FisEQ/build/vst3_helpers/FisEQ/CMakeFiles/rebuild_cache.dir
