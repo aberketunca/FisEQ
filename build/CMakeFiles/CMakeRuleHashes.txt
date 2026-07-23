@@ -1,3 +1,4 @@
 # Hashes of file build rules.
 57bf8502b1da0fe59c581bf43a3b9cd6 FisEQ_artefacts/JuceLibraryCode/FisEQ_Standalone/PkgInfo
 77ad11fab0fee9adc1af7c5b69df0124 FisEQ_artefacts/JuceLibraryCode/FisEQ_VST3/PkgInfo
+0597235e75b77c98b2f65f4958eab350 juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.cpp

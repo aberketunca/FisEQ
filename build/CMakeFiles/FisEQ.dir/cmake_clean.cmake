@@ -59,6 +59,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.o.d"
   "CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o"
   "CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o.d"
+  "CMakeFiles/FisEQ.dir/Source/DSP/EQBand.cpp.o"
+  "CMakeFiles/FisEQ.dir/Source/DSP/EQBand.cpp.o.d"
   "CMakeFiles/FisEQ.dir/Source/PluginEditor.cpp.o"
   "CMakeFiles/FisEQ.dir/Source/PluginEditor.cpp.o.d"
   "CMakeFiles/FisEQ.dir/Source/PluginProcessor.cpp.o"

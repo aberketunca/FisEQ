@@ -92,4 +92,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/FisEQ_All.dir/DependInfo.cmake"
   "CMakeFiles/FisEQ_Standalone.dir/DependInfo.cmake"
   "CMakeFiles/FisEQ_VST3.dir/DependInfo.cmake"
+  "CMakeFiles/FisEQAssets.dir/DependInfo.cmake"
   )

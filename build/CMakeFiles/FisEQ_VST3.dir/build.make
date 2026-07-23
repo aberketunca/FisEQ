@@ -260,6 +260,7 @@ FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/
 FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm.o
 FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/build.make
 FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: FisEQ_artefacts/libFisEQ_SharedCode.a
+FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: libFisEQAssets.a
 FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX CFBundle shared module FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FisEQ_VST3.dir/link.txt --verbose=$(VERBOSE)

@@ -24,6 +24,11 @@ juce_add_plugin(FisEQ
     PRODUCT_NAME "FisEQ"
 )
 
+juce_add_binary_data(FisEQAssets
+    SOURCES
+        Assets/Fonts/MAROLA__.TTF
+)
+
 target_sources(FisEQ PRIVATE
     Source/PluginProcessor.cpp
     Source/PluginProcessor.h
@@ -45,6 +50,8 @@ target_compile_definitions(FisEQ PRIVATE
 target_link_libraries(FisEQ PRIVATE
     juce::juce_audio_utils
     juce::juce_dsp
+
+    FisEQAssets
 
     juce::juce_recommended_config_flags
     juce::juce_recommended_lto_flags

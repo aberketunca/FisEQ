@@ -2,6 +2,7 @@
 /Users/berke/Desktop/FisEQ/build/CMakeFiles/FisEQ_All.dir
 /Users/berke/Desktop/FisEQ/build/CMakeFiles/FisEQ_Standalone.dir
 /Users/berke/Desktop/FisEQ/build/CMakeFiles/FisEQ_VST3.dir
+/Users/berke/Desktop/FisEQ/build/CMakeFiles/FisEQAssets.dir
 /Users/berke/Desktop/FisEQ/build/CMakeFiles/edit_cache.dir
 /Users/berke/Desktop/FisEQ/build/CMakeFiles/rebuild_cache.dir
 /Users/berke/Desktop/FisEQ/build/CMakeFiles/list_install_components.dir

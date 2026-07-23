@@ -1504,4 +1504,54 @@ CMakeFiles/FisEQ.dir/Source/PluginProcessor.cpp.o: \
   /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors/utilities/juce_ParameterAttachments.h \
   /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors/utilities/juce_AudioProcessorValueTreeState.h \
   /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors/utilities/juce_PluginHostType.h \
+  /Users/berke/Desktop/FisEQ/Source/DSP/EQBand.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/juce_dsp.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_neon.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_bf16.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_vector_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/complex \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/native/juce_SIMDNativeOps_fallback.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/native/juce_SIMDNativeOps_neon.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/containers/juce_SIMDRegister.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/containers/juce_SIMDRegister_Impl.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/maths/juce_Matrix.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/maths/juce_Phase.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/maths/juce_Polynomial.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/maths/juce_FastMathApproximations.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/maths/juce_LookupTable.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/maths/juce_LogRampedValue.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/containers/juce_AudioBlock.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/containers/juce_SIMDInterleavingHelpers.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/processors/juce_ProcessContext.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/processors/juce_ProcessorWrapper.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/processors/juce_ProcessorChain.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/processors/juce_ProcessorDuplicator.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/processors/juce_IIRFilter.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/processors/juce_IIRFilter_Impl.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/processors/juce_FIRFilter.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/processors/juce_StateVariableFilter.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/processors/juce_FirstOrderTPTFilter.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/processors/juce_Panner.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/processors/juce_DelayLine.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/processors/juce_Oversampling.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/processors/juce_BallisticsFilter.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/processors/juce_LinkwitzRileyFilter.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/processors/juce_DryWetMixer.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/processors/juce_StateVariableTPTFilter.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/frequency/juce_FFT.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/frequency/juce_Convolution.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/frequency/juce_Windowing.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/filter_design/juce_FilterDesign.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_Reverb.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_Bias.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_Gain.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_WaveShaper.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_Oscillator.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_LadderFilter.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_Compressor.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_NoiseGate.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_Limiter.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_Phaser.h \
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_Chorus.h \
   /Users/berke/Desktop/FisEQ/Source/PluginEditor.h

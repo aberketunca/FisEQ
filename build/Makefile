@@ -214,6 +214,19 @@ FisEQ_VST3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ_VST3.dir/build.make CMakeFiles/FisEQ_VST3.dir/build
 .PHONY : FisEQ_VST3/fast
 
+#=============================================================================
+# Target rules for targets named FisEQAssets
+
+# Build rule for target.
+FisEQAssets: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FisEQAssets
+.PHONY : FisEQAssets
+
+# fast build rule for target.
+FisEQAssets/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQAssets.dir/build.make CMakeFiles/FisEQAssets.dir/build
+.PHONY : FisEQAssets/fast
+
 JUCE/modules/juce_audio_basics/juce_audio_basics.o: JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o
 .PHONY : JUCE/modules/juce_audio_basics/juce_audio_basics.o
 
@@ -1231,6 +1244,30 @@ JUCE/modules/juce_gui_extra/juce_gui_extra.mm.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.s
 .PHONY : JUCE/modules/juce_gui_extra/juce_gui_extra.mm.s
 
+Source/DSP/EQBand.o: Source/DSP/EQBand.cpp.o
+.PHONY : Source/DSP/EQBand.o
+
+# target to build an object file
+Source/DSP/EQBand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/DSP/EQBand.cpp.o
+.PHONY : Source/DSP/EQBand.cpp.o
+
+Source/DSP/EQBand.i: Source/DSP/EQBand.cpp.i
+.PHONY : Source/DSP/EQBand.i
+
+# target to preprocess a source file
+Source/DSP/EQBand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/DSP/EQBand.cpp.i
+.PHONY : Source/DSP/EQBand.cpp.i
+
+Source/DSP/EQBand.s: Source/DSP/EQBand.cpp.s
+.PHONY : Source/DSP/EQBand.s
+
+# target to generate assembly for a file
+Source/DSP/EQBand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/DSP/EQBand.cpp.s
+.PHONY : Source/DSP/EQBand.cpp.s
+
 Source/PluginEditor.o: Source/PluginEditor.cpp.o
 .PHONY : Source/PluginEditor.o
 
@@ -1279,6 +1316,30 @@ Source/PluginProcessor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/PluginProcessor.cpp.s
 .PHONY : Source/PluginProcessor.cpp.s
 
+juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.o: juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.cpp.o
+.PHONY : juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.o
+
+# target to build an object file
+juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQAssets.dir/build.make CMakeFiles/FisEQAssets.dir/juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.cpp.o
+.PHONY : juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.cpp.o
+
+juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.i: juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.cpp.i
+.PHONY : juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.i
+
+# target to preprocess a source file
+juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQAssets.dir/build.make CMakeFiles/FisEQAssets.dir/juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.cpp.i
+.PHONY : juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.cpp.i
+
+juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.s: juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.cpp.s
+.PHONY : juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.s
+
+# target to generate assembly for a file
+juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQAssets.dir/build.make CMakeFiles/FisEQAssets.dir/juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.cpp.s
+.PHONY : juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1293,6 +1354,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... FisEQ_All"
 	@echo "... FisEQ"
+	@echo "... FisEQAssets"
 	@echo "... FisEQ_Standalone"
 	@echo "... FisEQ_VST3"
 	@echo "... JUCE/modules/juce_audio_basics/juce_audio_basics.o"
@@ -1418,12 +1480,18 @@ help:
 	@echo "... JUCE/modules/juce_gui_extra/juce_gui_extra.o"
 	@echo "... JUCE/modules/juce_gui_extra/juce_gui_extra.i"
 	@echo "... JUCE/modules/juce_gui_extra/juce_gui_extra.s"
+	@echo "... Source/DSP/EQBand.o"
+	@echo "... Source/DSP/EQBand.i"
+	@echo "... Source/DSP/EQBand.s"
 	@echo "... Source/PluginEditor.o"
 	@echo "... Source/PluginEditor.i"
 	@echo "... Source/PluginEditor.s"
 	@echo "... Source/PluginProcessor.o"
 	@echo "... Source/PluginProcessor.i"
 	@echo "... Source/PluginProcessor.s"
+	@echo "... juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.o"
+	@echo "... juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.i"
+	@echo "... juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.s"
 .PHONY : help
 
 

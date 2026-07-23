@@ -1,0 +1,2 @@
+/usr/bin/ar qc libFisEQAssets.a CMakeFiles/FisEQAssets.dir/juce_binarydata_FisEQAssets/JuceLibraryCode/BinaryData1.cpp.o
+/usr/bin/ranlib libFisEQAssets.a

@@ -1,7 +1,6 @@
 #include "PluginEditor.h"
 #include "PluginProcessor.h"
-
-
+#include <BinaryData.h>
 
 FisEQAudioProcessorEditor::FisEQAudioProcessorEditor(FisEQAudioProcessor& p)
     : AudioProcessorEditor(&p),
@@ -9,32 +8,65 @@ FisEQAudioProcessorEditor::FisEQAudioProcessorEditor(FisEQAudioProcessor& p)
 {
     setSize(600, 400);
 
-    gainSlider.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
-    gainSlider.setTextBoxStyle(
-        juce::Slider::TextBoxBelow,
-        false,
-        70,
-        20);
+    auto setupSlider = [](juce::Slider& slider)
+    {
+        slider.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
+        slider.setTextBoxStyle(
+            juce::Slider::TextBoxBelow,
+            false,
+            70,
+            20);
+    };
 
+    setupSlider(frequencySlider);
+    setupSlider(gainSlider);
+    setupSlider(qSlider);
+
+    addAndMakeVisible(frequencySlider);
     addAndMakeVisible(gainSlider);
+    addAndMakeVisible(qSlider);
 
+    frequencyLabel.setText("Frequency", juce::dontSendNotification);
     gainLabel.setText("Gain", juce::dontSendNotification);
-    gainLabel.setJustificationType(juce::Justification::centred);
+    qLabel.setText("Q", juce::dontSendNotification);
 
+    frequencyLabel.setJustificationType(juce::Justification::centred);
+    gainLabel.setJustificationType(juce::Justification::centred);
+    qLabel.setJustificationType(juce::Justification::centred);
+
+    addAndMakeVisible(frequencyLabel);
     addAndMakeVisible(gainLabel);
+    addAndMakeVisible(qLabel);
+
+    frequencyAttachment = std::make_unique<SliderAttachment>(
+        audioProcessor.parameters,
+        "frequency",
+        frequencySlider);
 
     gainAttachment = std::make_unique<SliderAttachment>(
         audioProcessor.parameters,
         "gain",
         gainSlider);
+
+    qAttachment = std::make_unique<SliderAttachment>(
+        audioProcessor.parameters,
+        "q",
+        qSlider);
 }
 
 void FisEQAudioProcessorEditor::paint(juce::Graphics& g)
 {
     g.fillAll(juce::Colours::black);
+    g.setColour(juce::Colour(0xff1640C9));
 
-    g.setColour(juce::Colours::white);
-    g.setFont(28.0f);
+    auto typeface = juce::Typeface::createSystemTypefaceFor(
+        BinaryData::MAROLA___TTF,
+        BinaryData::MAROLA___TTFSize);
+
+    juce::Font logoFont(typeface);
+    logoFont.setHeight(40.0f);
+
+    g.setFont(logoFont);
 
     g.drawFittedText(
         "FisEQ",
@@ -48,6 +80,11 @@ void FisEQAudioProcessorEditor::paint(juce::Graphics& g)
 
 void FisEQAudioProcessorEditor::resized()
 {
-    gainSlider.setBounds(250, 110, 100, 100);
-    gainLabel.setBounds(250, 215, 100, 20);
+    frequencySlider.setBounds(60, 120, 120, 120);
+    gainSlider.setBounds(240, 120, 120, 120);
+    qSlider.setBounds(420, 120, 120, 120);
+
+    frequencyLabel.setBounds(60, 245, 120, 20);
+    gainLabel.setBounds(240, 245, 120, 20);
+    qLabel.setBounds(420, 245, 120, 20);
 }
