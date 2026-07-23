@@ -1,17 +1,8 @@
 
 
-# Build output
-build/
+
 
 # macOS
 .DS_Store
 
-# IDE
-.vscode/
-.idea/
 
-# JUCE cache
-NewProject/
-
-# CMake
-CMakeUserPresets.json
