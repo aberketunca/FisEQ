@@ -2,12 +2,13 @@
 
 #include <juce_audio_processors/juce_audio_processors.h>
 
-class FisEQAudioProcessor;
+
+#include "PluginProcessor.h"
 
 class FisEQAudioProcessorEditor : public juce::AudioProcessorEditor
 {
 public:
-    explicit FisEQAudioProcessorEditor(FisEQAudioProcessor&);
+    FisEQAudioProcessorEditor(FisEQAudioProcessor&);
     ~FisEQAudioProcessorEditor() override = default;
 
     void paint(juce::Graphics&) override;
@@ -15,6 +16,14 @@ public:
 
 private:
     FisEQAudioProcessor& audioProcessor;
+
+    juce::Slider gainSlider;
+    juce::Label gainLabel;
+
+    using SliderAttachment =
+        juce::AudioProcessorValueTreeState::SliderAttachment;
+
+    std::unique_ptr<SliderAttachment> gainAttachment;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(FisEQAudioProcessorEditor)
 };

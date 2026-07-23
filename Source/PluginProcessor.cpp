@@ -53,8 +53,10 @@ void FisEQAudioProcessor::processBlock(juce::AudioBuffer<float>& buffer,
 
     juce::ScopedNoDenormals noDenormals;
 
-    // Pass audio through unchanged.
-    // DSP will be added here later.
+    float gainDB = parameters.getRawParameterValue("GAIN")->load();
+    float gain = juce::Decibels::decibelsToGain(gainDB);
+
+    buffer.applyGain(gain);
 }
 
 juce::AudioProcessorEditor* FisEQAudioProcessor::createEditor()
@@ -80,4 +82,9 @@ void FisEQAudioProcessor::getStateInformation(juce::MemoryBlock& destData)
 void FisEQAudioProcessor::setStateInformation(const void* data, int sizeInBytes)
 {
     juce::ignoreUnused(data, sizeInBytes);
+}
+
+juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
+{
+    return new FisEQAudioProcessor();
 }
