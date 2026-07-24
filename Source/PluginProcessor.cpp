@@ -65,7 +65,13 @@ void FisEQAudioProcessor::processBlock(juce::AudioBuffer<float>& buffer,
                                        juce::MidiBuffer& midiMessages)
 {
     juce::ignoreUnused(midiMessages);
+
     juce::ScopedNoDenormals noDenormals;
+
+    static int counter = 0;
+
+if (++counter % 200 == 0)
+    DBG("processBlock running");
 
     float frequency =
         parameters.getRawParameterValue("frequency")->load();
