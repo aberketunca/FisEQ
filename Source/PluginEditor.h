@@ -2,6 +2,7 @@
 
 #include <juce_audio_processors/juce_audio_processors.h>
 #include "PluginProcessor.h"
+#include <array>
 
 class FisEQAudioProcessorEditor : public juce::AudioProcessorEditor
 {
@@ -14,7 +15,7 @@ public:
 
 private:
     FisEQAudioProcessor& audioProcessor;
-
+    std::array<float, 512> responseCurve;
     using SliderAttachment =
         juce::AudioProcessorValueTreeState::SliderAttachment;
 

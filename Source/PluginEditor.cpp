@@ -57,6 +57,78 @@ FisEQAudioProcessorEditor::FisEQAudioProcessorEditor(FisEQAudioProcessor& p)
 void FisEQAudioProcessorEditor::paint(juce::Graphics& g)
 {
     g.fillAll(juce::Colours::black);
+        juce::Rectangle<int> graphArea(
+    40,
+    60,
+    getWidth() - 80,
+    110
+    );
+    g.setColour(juce::Colour(0xff1b1b1b));
+    g.fillRoundedRectangle(
+    graphArea.toFloat(),
+    8.0f
+    );
+    g.setColour(juce::Colours::grey);
+
+    g.drawRoundedRectangle(
+        graphArea.toFloat(),
+        8.0f,
+        1.0f
+    );
+    g.setColour(juce::Colours::darkgrey);
+    
+    auto frequency =
+    audioProcessor.parameters.getRawParameterValue("frequency")->load();
+
+    auto gain =
+        audioProcessor.parameters.getRawParameterValue("gain")->load();
+
+    auto q =
+        audioProcessor.parameters.getRawParameterValue("q")->load();
+    juce::Path response;
+
+
+    for (int x = 0; x < graphArea.getWidth(); ++x)
+    {
+        float normX = (float)x / (float)graphArea.getWidth();
+
+        float freqPos =
+            std::log10(frequency / 20.0f)
+            / std::log10(20000.0f / 20.0f);
+
+        float sigma = 0.15f / q;
+
+        float bell =
+            std::exp(
+                -0.5f *
+                std::pow((normX - freqPos) / sigma, 2.0f)
+            );
+
+        float y =
+            graphArea.getCentreY()
+            - gain * bell * 3.0f;
+
+        if (x == 0)
+            response.startNewSubPath(
+                (float)graphArea.getX(),
+                y);
+        else
+            response.lineTo(
+                (float)(graphArea.getX() + x),
+                y);
+    }
+    g.setColour(juce::Colour(0xff1640C9));
+    g.strokePath(
+        response,
+        juce::PathStrokeType(2.5f)
+    );
+
+    g.drawHorizontalLine(
+        graphArea.getCentreY(),
+        (float)graphArea.getX(),
+        (float)graphArea.getRight()
+    );
+
     g.setColour(juce::Colour(0xff1640C9));
 
     auto typeface = juce::Typeface::createSystemTypefaceFor(
@@ -71,11 +143,12 @@ void FisEQAudioProcessorEditor::paint(juce::Graphics& g)
     g.drawFittedText(
         "FisEQ",
         0,
-        20,
+        10,
         getWidth(),
         40,
         juce::Justification::centred,
-        1);
+        1
+    );
 }
 
 void FisEQAudioProcessorEditor::resized()
