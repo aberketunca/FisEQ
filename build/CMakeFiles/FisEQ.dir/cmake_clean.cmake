@@ -61,12 +61,18 @@ file(REMOVE_RECURSE
   "CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o.d"
   "CMakeFiles/FisEQ.dir/Source/DSP/EQBand.cpp.o"
   "CMakeFiles/FisEQ.dir/Source/DSP/EQBand.cpp.o.d"
+  "CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.o"
+  "CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.o.d"
+  "CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.o"
+  "CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.o.d"
+  "CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.o"
+  "CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.o.d"
   "CMakeFiles/FisEQ.dir/Source/PluginEditor.cpp.o"
   "CMakeFiles/FisEQ.dir/Source/PluginEditor.cpp.o.d"
   "CMakeFiles/FisEQ.dir/Source/PluginProcessor.cpp.o"
   "CMakeFiles/FisEQ.dir/Source/PluginProcessor.cpp.o.d"
-  "FisEQ_artefacts/libFisEQ_SharedCode.a"
-  "FisEQ_artefacts/libFisEQ_SharedCode.pdb"
+  "FisEQ_artefacts/Release/libFisEQ_SharedCode.a"
+  "FisEQ_artefacts/Release/libFisEQ_SharedCode.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

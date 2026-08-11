@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "FisEQ_artefacts/libFisEQ_SharedCode.a"
+  "FisEQ_artefacts/Release/libFisEQ_SharedCode.a"
 )

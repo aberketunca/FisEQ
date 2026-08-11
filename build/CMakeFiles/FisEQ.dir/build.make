@@ -114,10 +114,52 @@ CMakeFiles/FisEQ.dir/Source/DSP/EQBand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FisEQ.dir/Source/DSP/EQBand.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/berke/Desktop/FisEQ/Source/DSP/EQBand.cpp -o CMakeFiles/FisEQ.dir/Source/DSP/EQBand.cpp.s
 
+CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.o: CMakeFiles/FisEQ.dir/flags.make
+CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.o: /Users/berke/Desktop/FisEQ/Source/DSP/SpectrumAnalyzer.cpp
+CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.o -MF CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.o.d -o CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.o -c /Users/berke/Desktop/FisEQ/Source/DSP/SpectrumAnalyzer.cpp
+
+CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/berke/Desktop/FisEQ/Source/DSP/SpectrumAnalyzer.cpp > CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.i
+
+CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/berke/Desktop/FisEQ/Source/DSP/SpectrumAnalyzer.cpp -o CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.s
+
+CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.o: CMakeFiles/FisEQ.dir/flags.make
+CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.o: /Users/berke/Desktop/FisEQ/Source/GUI/SpectrumDisplay.cpp
+CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.o -MF CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.o.d -o CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.o -c /Users/berke/Desktop/FisEQ/Source/GUI/SpectrumDisplay.cpp
+
+CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/berke/Desktop/FisEQ/Source/GUI/SpectrumDisplay.cpp > CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.i
+
+CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/berke/Desktop/FisEQ/Source/GUI/SpectrumDisplay.cpp -o CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.s
+
+CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.o: CMakeFiles/FisEQ.dir/flags.make
+CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.o: /Users/berke/Desktop/FisEQ/Source/GUI/EQCurveEditor.cpp
+CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.o -MF CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.o.d -o CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.o -c /Users/berke/Desktop/FisEQ/Source/GUI/EQCurveEditor.cpp
+
+CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/berke/Desktop/FisEQ/Source/GUI/EQCurveEditor.cpp > CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.i
+
+CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/berke/Desktop/FisEQ/Source/GUI/EQCurveEditor.cpp -o CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.s
+
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors/juce_audio_processors.mm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors/juce_audio_processors.mm
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.i: cmake_force
@@ -131,7 +173,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_gui_extra/juce_gui_extra.mm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_gui_extra/juce_gui_extra.mm
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.i: cmake_force
@@ -145,7 +187,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.s: cmake_forc
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp.i: cmake_force
@@ -159,7 +201,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp.s: cmake
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_3.cpp.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_3.cpp.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_gui_basics/juce_gui_basics_3.cpp
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_3.cpp.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_3.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_3.cpp.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_3.cpp.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_3.cpp.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_gui_basics/juce_gui_basics_3.cpp
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_3.cpp.i: cmake_force
@@ -173,7 +215,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_3.cpp.s: cmake
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_4.cpp.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_4.cpp.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_gui_basics/juce_gui_basics_4.cpp
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_4.cpp.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_4.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_4.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_4.cpp.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_4.cpp.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_4.cpp.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_gui_basics/juce_gui_basics_4.cpp
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_4.cpp.i: cmake_force
@@ -187,7 +229,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_4.cpp.s: cmake
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.i: cmake_force
@@ -201,7 +243,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.s: cmake
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_gui_basics/juce_gui_basics.mm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_gui_basics/juce_gui_basics.mm
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.i: cmake_force
@@ -215,7 +257,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.s: cmake_fo
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.i: cmake_force
@@ -229,7 +271,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.s: cm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.i: cmake_force
@@ -243,7 +285,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.s: cma
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c.i: cmake_force
@@ -257,7 +299,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c.s: cmak
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_2.c.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_2.c.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_libjpg_2.c
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_2.c.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_2.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_2.c.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_2.c.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_2.c.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_libjpg_2.c
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_2.c.i: cmake_force
@@ -271,7 +313,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_2.c.s: cmak
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_3.c.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_3.c.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_libjpg_3.c
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_3.c.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_3.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_3.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_3.c.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_3.c.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_3.c.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_libjpg_3.c
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_3.c.i: cmake_force
@@ -285,7 +327,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_3.c.s: cmak
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_libpng.c
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_libpng.c
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.i: cmake_force
@@ -299,7 +341,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.s: cmake_
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.i: cmake_force
@@ -313,7 +355,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.s: cmake
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics.mm.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics.mm.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics.mm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics.mm.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics.mm.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics.mm.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics.mm.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics.mm.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_graphics/juce_graphics.mm
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics.mm.i: cmake_force
@@ -327,7 +369,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics.mm.s: cmake_force
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_events/juce_events.mm.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_events/juce_events.mm.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_events/juce_events.mm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_events/juce_events.mm.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_events/juce_events.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_events/juce_events.mm.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_events/juce_events.mm.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_events/juce_events.mm.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_events/juce_events.mm.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_events/juce_events.mm
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_events/juce_events.mm.i: cmake_force
@@ -341,7 +383,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_events/juce_events.mm.s: cmake_force
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/juce_core_CompilationTime.cpp
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/juce_core_CompilationTime.cpp
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.i: cmake_force
@@ -355,7 +397,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.s: cma
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_zlib.c.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_zlib.c.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/juce_core_zlib.c
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_zlib.c.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_zlib.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_zlib.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_zlib.c.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_zlib.c.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_zlib.c.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/juce_core_zlib.c
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_zlib.c.i: cmake_force
@@ -369,7 +411,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_zlib.c.s: cmake_force
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core.mm.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core.mm.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/juce_core.mm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core.mm.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core.mm.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core.mm.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core.mm.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core.mm.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_core/juce_core.mm
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core.mm.i: cmake_force
@@ -383,7 +425,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core.mm.s: cmake_force
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_data_structures/juce_data_structures.mm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_data_structures/juce_data_structures.mm
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.i: cmake_force
@@ -397,7 +439,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.s
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.i: cmake_force
@@ -411,7 +453,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_proc
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.i: cmake_force
@@ -425,7 +467,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_proc
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.i: cmake_force
@@ -439,7 +481,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_proc
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_basics/juce_audio_basics.mm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_basics/juce_audio_basics.mm
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.i: cmake_force
@@ -453,7 +495,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.s: cmak
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_utils/juce_audio_utils.mm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_utils/juce_audio_utils.mm
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.i: cmake_force
@@ -467,7 +509,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.s: cmake_
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_1.c.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_1.c.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_1.c
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_1.c.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_1.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_1.c.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_1.c.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_1.c.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_1.c
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_1.c.i: cmake_force
@@ -481,7 +523,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_1.c
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c.i: cmake_force
@@ -495,7 +537,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/juce_audio_formats.mm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_formats/juce_audio_formats.mm
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.i: cmake_force
@@ -509,7 +551,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.s: cm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_devices/juce_audio_devices.mm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_devices/juce_audio_devices.mm
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.i: cmake_force
@@ -523,7 +565,7 @@ CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.s: cm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_dsp/juce_dsp.mm.o: CMakeFiles/FisEQ.dir/flags.make
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_dsp/juce_dsp.mm.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/juce_dsp.mm
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_dsp/juce_dsp.mm.o: CMakeFiles/FisEQ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_dsp/juce_dsp.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/FisEQ.dir/JUCE/modules/juce_dsp/juce_dsp.mm.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FisEQ.dir/JUCE/modules/juce_dsp/juce_dsp.mm.o -MF CMakeFiles/FisEQ.dir/JUCE/modules/juce_dsp/juce_dsp.mm.o.d -o CMakeFiles/FisEQ.dir/JUCE/modules/juce_dsp/juce_dsp.mm.o -c /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/juce_dsp.mm
 
 CMakeFiles/FisEQ.dir/JUCE/modules/juce_dsp/juce_dsp.mm.i: cmake_force
@@ -539,6 +581,9 @@ FisEQ_OBJECTS = \
 "CMakeFiles/FisEQ.dir/Source/PluginProcessor.cpp.o" \
 "CMakeFiles/FisEQ.dir/Source/PluginEditor.cpp.o" \
 "CMakeFiles/FisEQ.dir/Source/DSP/EQBand.cpp.o" \
+"CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.o" \
+"CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.o" \
+"CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.o" \
 "CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o" \
 "CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o" \
 "CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp.o" \
@@ -573,47 +618,50 @@ FisEQ_OBJECTS = \
 # External object files for target FisEQ
 FisEQ_EXTERNAL_OBJECTS =
 
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/Source/PluginProcessor.cpp.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/Source/PluginEditor.cpp.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/Source/DSP/EQBand.cpp.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_3.cpp.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_4.cpp.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_2.c.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_3.c.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics.mm.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_events/juce_events.mm.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_zlib.c.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core.mm.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_1.c.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_dsp/juce_dsp.mm.o
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/build.make
-FisEQ_artefacts/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking CXX static library FisEQ_artefacts/libFisEQ_SharedCode.a"
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/Source/PluginProcessor.cpp.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/Source/PluginEditor.cpp.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/Source/DSP/EQBand.cpp.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_3.cpp.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_4.cpp.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_2.c.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libjpg_3.c.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_graphics/juce_graphics.mm.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_events/juce_events.mm.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core_zlib.c.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_core/juce_core.mm.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_data_structures/juce_data_structures.mm.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_1.c.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/JUCE/modules/juce_dsp/juce_dsp.mm.o
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/build.make
+FisEQ_artefacts/Release/libFisEQ_SharedCode.a: CMakeFiles/FisEQ.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX static library FisEQ_artefacts/Release/libFisEQ_SharedCode.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/FisEQ.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FisEQ.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/FisEQ.dir/build: FisEQ_artefacts/libFisEQ_SharedCode.a
+CMakeFiles/FisEQ.dir/build: FisEQ_artefacts/Release/libFisEQ_SharedCode.a
 .PHONY : CMakeFiles/FisEQ.dir/build
 
 CMakeFiles/FisEQ.dir/clean:

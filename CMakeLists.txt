@@ -34,17 +34,22 @@ target_sources(FisEQ PRIVATE
     Source/PluginProcessor.h
     Source/PluginEditor.cpp
     Source/PluginEditor.h
-    
+
     Source/DSP/EQBand.cpp
     Source/DSP/EQBand.h
+    Source/DSP/SpectrumAnalyzer.cpp
+    Source/DSP/SpectrumAnalyzer.h
+
+    Source/GUI/SpectrumDisplay.cpp
+    Source/GUI/SpectrumDisplay.h
+    Source/GUI/EQCurveEditor.cpp
+    Source/GUI/EQCurveEditor.h
 )
 
 target_compile_definitions(FisEQ PRIVATE
     JUCE_WEB_BROWSER=0
     JUCE_USE_CURL=0
-
     JUCE_VST3_CAN_REPLACE_VST2=0
-
 )
 
 target_link_libraries(FisEQ PRIVATE

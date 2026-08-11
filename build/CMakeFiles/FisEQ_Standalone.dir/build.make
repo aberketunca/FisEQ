@@ -76,9 +76,9 @@ FisEQ_artefacts/JuceLibraryCode/FisEQ_Standalone/PkgInfo:
 CMakeFiles/FisEQ_Standalone.dir/codegen:
 .PHONY : CMakeFiles/FisEQ_Standalone.dir/codegen
 
-FisEQ_artefacts/Standalone/FisEQ.app/Contents/Resources/RecentFilesMenuTemplate.nib: /Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/RecentFilesMenuTemplate.nib
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Copying OS X content FisEQ_artefacts/Standalone/FisEQ.app/Contents/Resources/RecentFilesMenuTemplate.nib"
-	$(CMAKE_COMMAND) -E copy /Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/RecentFilesMenuTemplate.nib FisEQ_artefacts/Standalone/FisEQ.app/Contents/Resources/RecentFilesMenuTemplate.nib
+FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/Resources/RecentFilesMenuTemplate.nib: /Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/RecentFilesMenuTemplate.nib
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Copying OS X content FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/Resources/RecentFilesMenuTemplate.nib"
+	$(CMAKE_COMMAND) -E copy /Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/RecentFilesMenuTemplate.nib FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/Resources/RecentFilesMenuTemplate.nib
 
 CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o: CMakeFiles/FisEQ_Standalone.dir/flags.make
 CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o: /Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp
@@ -251,28 +251,28 @@ FisEQ_Standalone_OBJECTS = \
 # External object files for target FisEQ_Standalone
 FisEQ_Standalone_EXTERNAL_OBJECTS =
 
-FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o
-FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.o
-FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.o
-FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.o
-FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm.o
-FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm.o
-FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm.o
-FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm.o
-FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm.o
-FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm.o
-FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm.o
-FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/build.make
-FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ: FisEQ_artefacts/libFisEQ_SharedCode.a
-FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ: libFisEQAssets.a
-FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ"
+FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o
+FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.o
+FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.o
+FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.o
+FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm.o
+FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm.o
+FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm.o
+FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm.o
+FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm.o
+FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm.o
+FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm.o
+FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/build.make
+FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ: FisEQ_artefacts/Release/libFisEQ_SharedCode.a
+FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ: libFisEQAssets.a
+FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_Standalone.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FisEQ_Standalone.dir/link.txt --verbose=$(VERBOSE)
-	/opt/homebrew/bin/cmake -E copy /Users/berke/Desktop/FisEQ/build/FisEQ_artefacts/JuceLibraryCode/FisEQ_Standalone/PkgInfo /Users/berke/Desktop/FisEQ/build/FisEQ_artefacts/Standalone/FisEQ.app/Contents
+	/opt/homebrew/bin/cmake -E copy /Users/berke/Desktop/FisEQ/build/FisEQ_artefacts/JuceLibraryCode/FisEQ_Standalone/PkgInfo /Users/berke/Desktop/FisEQ/build/FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents
 
 # Rule to build all files generated by this target.
-CMakeFiles/FisEQ_Standalone.dir/build: FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ
-CMakeFiles/FisEQ_Standalone.dir/build: FisEQ_artefacts/Standalone/FisEQ.app/Contents/Resources/RecentFilesMenuTemplate.nib
+CMakeFiles/FisEQ_Standalone.dir/build: FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ
+CMakeFiles/FisEQ_Standalone.dir/build: FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/Resources/RecentFilesMenuTemplate.nib
 .PHONY : CMakeFiles/FisEQ_Standalone.dir/build
 
 CMakeFiles/FisEQ_Standalone.dir/clean:

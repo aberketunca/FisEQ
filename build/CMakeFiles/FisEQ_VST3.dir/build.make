@@ -247,30 +247,30 @@ FisEQ_VST3_OBJECTS = \
 # External object files for target FisEQ_VST3
 FisEQ_VST3_EXTERNAL_OBJECTS =
 
-FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o
-FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.o
-FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.o
-FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.o
-FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm.o
-FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm.o
-FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm.o
-FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm.o
-FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm.o
-FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm.o
-FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm.o
-FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/build.make
-FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: FisEQ_artefacts/libFisEQ_SharedCode.a
-FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: libFisEQAssets.a
-FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX CFBundle shared module FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ"
+FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o
+FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.o
+FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.o
+FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.o
+FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm.o
+FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm.o
+FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm.o
+FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm.o
+FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm.o
+FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm.o
+FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm.o
+FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/build.make
+FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: FisEQ_artefacts/Release/libFisEQ_SharedCode.a
+FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: libFisEQAssets.a
+FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ: CMakeFiles/FisEQ_VST3.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/berke/Desktop/FisEQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX CFBundle shared module FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FisEQ_VST3.dir/link.txt --verbose=$(VERBOSE)
-	/opt/homebrew/bin/cmake -E copy /Users/berke/Desktop/FisEQ/build/FisEQ_artefacts/JuceLibraryCode/FisEQ_VST3/PkgInfo /Users/berke/Desktop/FisEQ/build/FisEQ_artefacts/VST3/FisEQ.vst3/Contents
-	/opt/homebrew/bin/cmake -Dsrc=/Users/berke/Desktop/FisEQ/build/FisEQ_artefacts/VST3/FisEQ.vst3 -P /Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/checkBundleSigning.cmake
+	/opt/homebrew/bin/cmake -E copy /Users/berke/Desktop/FisEQ/build/FisEQ_artefacts/JuceLibraryCode/FisEQ_VST3/PkgInfo /Users/berke/Desktop/FisEQ/build/FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents
+	/opt/homebrew/bin/cmake -Dsrc=/Users/berke/Desktop/FisEQ/build/FisEQ_artefacts/Release/VST3/FisEQ.vst3 -P /Users/berke/Desktop/FisEQ/JUCE/extras/Build/CMake/checkBundleSigning.cmake
 	/opt/homebrew/bin/cmake -E echo removing\ moduleinfo.json
-	/opt/homebrew/bin/cmake -E remove -f /Users/berke/Desktop/FisEQ/build/FisEQ_artefacts//VST3/FisEQ.vst3/Contents/moduleinfo.json /Users/berke/Desktop/FisEQ/build/FisEQ_artefacts//VST3/FisEQ.vst3/Contents/Resources/moduleinfo.json
+	/opt/homebrew/bin/cmake -E remove -f /Users/berke/Desktop/FisEQ/build/FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/moduleinfo.json /Users/berke/Desktop/FisEQ/build/FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/Resources/moduleinfo.json
 
 # Rule to build all files generated by this target.
-CMakeFiles/FisEQ_VST3.dir/build: FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ
+CMakeFiles/FisEQ_VST3.dir/build: FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ
 .PHONY : CMakeFiles/FisEQ_VST3.dir/build
 
 CMakeFiles/FisEQ_VST3.dir/clean:

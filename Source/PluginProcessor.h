@@ -2,10 +2,14 @@
 
 #include <juce_audio_processors/juce_audio_processors.h>
 #include "DSP/EQBand.h"
+#include "DSP/SpectrumAnalyzer.h"
+#include <array>
 
 class FisEQAudioProcessor : public juce::AudioProcessor
 {
 public:
+    static constexpr int numBands = 5;
+
     FisEQAudioProcessor();
     ~FisEQAudioProcessor() override = default;
 
@@ -40,8 +44,30 @@ public:
     void getStateInformation(juce::MemoryBlock&) override;
     void setStateInformation(const void*, int) override;
 
+    // Public access for GUI
+    SpectrumAnalyzer& getAnalyzer() { return analyzer; }
+    EQBand& getBand(int index) { return bands[static_cast<size_t>(index)]; }
+
+    /** Compute the composite magnitude response of all bands at a given frequency. */
+    double getCompositeMagnitude(double frequency) const;
+
 private:
-    EQBand eqBand;
+    std::array<EQBand, numBands> bands;
+    SpectrumAnalyzer analyzer;
+
+    // Band filter types (fixed topology)
+    static constexpr std::array<FilterType, numBands> bandTypes = {
+        FilterType::LowShelf,
+        FilterType::Peak,
+        FilterType::Peak,
+        FilterType::Peak,
+        FilterType::HighShelf
+    };
+
+    // Default frequencies per band
+    static constexpr std::array<float, numBands> defaultFrequencies = {
+        80.0f, 300.0f, 1000.0f, 4000.0f, 12000.0f
+    };
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(FisEQAudioProcessor)
 };

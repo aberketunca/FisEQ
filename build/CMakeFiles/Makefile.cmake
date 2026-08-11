@@ -69,13 +69,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "FisEQ_artefacts/JuceLibraryCode/Defs.txt"
-  "FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS"
-  "FisEQ_artefacts/Standalone/FisEQ.app/Contents/Info.plist"
-  "FisEQ_artefacts/Standalone/FisEQ.app/Contents/Info.plist"
-  "FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS"
-  "FisEQ_artefacts/VST3/FisEQ.vst3/Contents/Info.plist"
-  "FisEQ_artefacts/VST3/FisEQ.vst3/Contents/Info.plist"
+  "FisEQ_artefacts/JuceLibraryCode/Release/Defs.txt"
+  "FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS"
+  "FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/Info.plist"
+  "FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/Info.plist"
+  "FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS"
+  "FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/Info.plist"
+  "FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/Info.plist"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "JUCE/JUCEConfigVersion.cmake"
   "JUCE/JUCEConfig.cmake"

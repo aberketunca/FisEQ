@@ -1554,4 +1554,9 @@ CMakeFiles/FisEQ.dir/Source/PluginProcessor.cpp.o: \
   /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_Limiter.h \
   /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_Phaser.h \
   /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_Chorus.h \
-  /Users/berke/Desktop/FisEQ/Source/PluginEditor.h
+  /Users/berke/Desktop/FisEQ/Source/DSP/SpectrumAnalyzer.h \
+  /Users/berke/Desktop/FisEQ/Source/PluginEditor.h \
+  /Users/berke/Desktop/FisEQ/Source/GUI/SpectrumDisplay.h \
+  /Users/berke/Desktop/FisEQ/Source/GUI/../DSP/SpectrumAnalyzer.h \
+  /Users/berke/Desktop/FisEQ/Source/GUI/EQCurveEditor.h \
+  /Users/berke/Desktop/FisEQ/Source/GUI/../PluginProcessor.h

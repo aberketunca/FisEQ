@@ -22,9 +22,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm.o"
   "CMakeFiles/FisEQ_Standalone.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm.o.d"
   "FisEQ_artefacts/JuceLibraryCode/FisEQ_Standalone/PkgInfo"
-  "FisEQ_artefacts/Standalone/FisEQ.app/Contents/MacOS/FisEQ"
-  "FisEQ_artefacts/Standalone/FisEQ.app/Contents/Resources/RecentFilesMenuTemplate.nib"
-  "FisEQ_artefacts/Standalone/FisEQ.pdb"
+  "FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/MacOS/FisEQ"
+  "FisEQ_artefacts/Release/Standalone/FisEQ.app/Contents/Resources/RecentFilesMenuTemplate.nib"
+  "FisEQ_artefacts/Release/Standalone/FisEQ.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

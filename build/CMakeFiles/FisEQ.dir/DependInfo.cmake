@@ -39,6 +39,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/berke/Desktop/FisEQ/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp" "CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.o" "gcc" "CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.o.d"
   "/Users/berke/Desktop/FisEQ/JUCE/modules/juce_gui_extra/juce_gui_extra.mm" "CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o" "gcc" "CMakeFiles/FisEQ.dir/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o.d"
   "/Users/berke/Desktop/FisEQ/Source/DSP/EQBand.cpp" "CMakeFiles/FisEQ.dir/Source/DSP/EQBand.cpp.o" "gcc" "CMakeFiles/FisEQ.dir/Source/DSP/EQBand.cpp.o.d"
+  "/Users/berke/Desktop/FisEQ/Source/DSP/SpectrumAnalyzer.cpp" "CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.o" "gcc" "CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.o.d"
+  "/Users/berke/Desktop/FisEQ/Source/GUI/EQCurveEditor.cpp" "CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.o" "gcc" "CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.o.d"
+  "/Users/berke/Desktop/FisEQ/Source/GUI/SpectrumDisplay.cpp" "CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.o" "gcc" "CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.o.d"
   "/Users/berke/Desktop/FisEQ/Source/PluginEditor.cpp" "CMakeFiles/FisEQ.dir/Source/PluginEditor.cpp.o" "gcc" "CMakeFiles/FisEQ.dir/Source/PluginEditor.cpp.o.d"
   "/Users/berke/Desktop/FisEQ/Source/PluginProcessor.cpp" "CMakeFiles/FisEQ.dir/Source/PluginProcessor.cpp.o" "gcc" "CMakeFiles/FisEQ.dir/Source/PluginProcessor.cpp.o.d"
   )

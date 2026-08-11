@@ -1268,6 +1268,78 @@ Source/DSP/EQBand.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/DSP/EQBand.cpp.s
 .PHONY : Source/DSP/EQBand.cpp.s
 
+Source/DSP/SpectrumAnalyzer.o: Source/DSP/SpectrumAnalyzer.cpp.o
+.PHONY : Source/DSP/SpectrumAnalyzer.o
+
+# target to build an object file
+Source/DSP/SpectrumAnalyzer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.o
+.PHONY : Source/DSP/SpectrumAnalyzer.cpp.o
+
+Source/DSP/SpectrumAnalyzer.i: Source/DSP/SpectrumAnalyzer.cpp.i
+.PHONY : Source/DSP/SpectrumAnalyzer.i
+
+# target to preprocess a source file
+Source/DSP/SpectrumAnalyzer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.i
+.PHONY : Source/DSP/SpectrumAnalyzer.cpp.i
+
+Source/DSP/SpectrumAnalyzer.s: Source/DSP/SpectrumAnalyzer.cpp.s
+.PHONY : Source/DSP/SpectrumAnalyzer.s
+
+# target to generate assembly for a file
+Source/DSP/SpectrumAnalyzer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.s
+.PHONY : Source/DSP/SpectrumAnalyzer.cpp.s
+
+Source/GUI/EQCurveEditor.o: Source/GUI/EQCurveEditor.cpp.o
+.PHONY : Source/GUI/EQCurveEditor.o
+
+# target to build an object file
+Source/GUI/EQCurveEditor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.o
+.PHONY : Source/GUI/EQCurveEditor.cpp.o
+
+Source/GUI/EQCurveEditor.i: Source/GUI/EQCurveEditor.cpp.i
+.PHONY : Source/GUI/EQCurveEditor.i
+
+# target to preprocess a source file
+Source/GUI/EQCurveEditor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.i
+.PHONY : Source/GUI/EQCurveEditor.cpp.i
+
+Source/GUI/EQCurveEditor.s: Source/GUI/EQCurveEditor.cpp.s
+.PHONY : Source/GUI/EQCurveEditor.s
+
+# target to generate assembly for a file
+Source/GUI/EQCurveEditor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.s
+.PHONY : Source/GUI/EQCurveEditor.cpp.s
+
+Source/GUI/SpectrumDisplay.o: Source/GUI/SpectrumDisplay.cpp.o
+.PHONY : Source/GUI/SpectrumDisplay.o
+
+# target to build an object file
+Source/GUI/SpectrumDisplay.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.o
+.PHONY : Source/GUI/SpectrumDisplay.cpp.o
+
+Source/GUI/SpectrumDisplay.i: Source/GUI/SpectrumDisplay.cpp.i
+.PHONY : Source/GUI/SpectrumDisplay.i
+
+# target to preprocess a source file
+Source/GUI/SpectrumDisplay.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.i
+.PHONY : Source/GUI/SpectrumDisplay.cpp.i
+
+Source/GUI/SpectrumDisplay.s: Source/GUI/SpectrumDisplay.cpp.s
+.PHONY : Source/GUI/SpectrumDisplay.s
+
+# target to generate assembly for a file
+Source/GUI/SpectrumDisplay.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.s
+.PHONY : Source/GUI/SpectrumDisplay.cpp.s
+
 Source/PluginEditor.o: Source/PluginEditor.cpp.o
 .PHONY : Source/PluginEditor.o
 
@@ -1483,6 +1555,15 @@ help:
 	@echo "... Source/DSP/EQBand.o"
 	@echo "... Source/DSP/EQBand.i"
 	@echo "... Source/DSP/EQBand.s"
+	@echo "... Source/DSP/SpectrumAnalyzer.o"
+	@echo "... Source/DSP/SpectrumAnalyzer.i"
+	@echo "... Source/DSP/SpectrumAnalyzer.s"
+	@echo "... Source/GUI/EQCurveEditor.o"
+	@echo "... Source/GUI/EQCurveEditor.i"
+	@echo "... Source/GUI/EQCurveEditor.s"
+	@echo "... Source/GUI/SpectrumDisplay.o"
+	@echo "... Source/GUI/SpectrumDisplay.i"
+	@echo "... Source/GUI/SpectrumDisplay.s"
 	@echo "... Source/PluginEditor.o"
 	@echo "... Source/PluginEditor.i"
 	@echo "... Source/PluginEditor.s"

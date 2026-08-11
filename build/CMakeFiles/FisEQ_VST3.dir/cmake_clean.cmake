@@ -22,8 +22,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm.o"
   "CMakeFiles/FisEQ_VST3.dir/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm.o.d"
   "FisEQ_artefacts/JuceLibraryCode/FisEQ_VST3/PkgInfo"
-  "FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ"
-  "FisEQ_artefacts/VST3/FisEQ.vst3/Contents/MacOS/FisEQ.pdb"
+  "FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ"
+  "FisEQ_artefacts/Release/VST3/FisEQ.vst3/Contents/MacOS/FisEQ.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

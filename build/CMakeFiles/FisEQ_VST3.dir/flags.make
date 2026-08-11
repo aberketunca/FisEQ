@@ -6,7 +6,7 @@ CXX_DEFINES = -DFisEQ_VST3_EXPORTS -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJU
 
 CXX_INCLUDES = -I/Users/berke/Desktop/FisEQ/build/FisEQ_artefacts/JuceLibraryCode -I/Users/berke/Desktop/FisEQ/JUCE/modules -I/Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK -I/Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors_headless/format_types/LV2_SDK -I/Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors_headless/format_types/LV2_SDK/lv2 -I/Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors_headless/format_types/LV2_SDK/serd -I/Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors_headless/format_types/LV2_SDK/sord -I/Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors_headless/format_types/LV2_SDK/sord/src -I/Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors_headless/format_types/LV2_SDK/sratom -I/Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors_headless/format_types/LV2_SDK/lilv -I/Users/berke/Desktop/FisEQ/JUCE/modules/juce_audio_processors_headless/format_types/LV2_SDK/lilv/src -I/Users/berke/Desktop/FisEQ/build/juce_binarydata_FisEQAssets/JuceLibraryCode
 
-CXX_FLAGSarm64 = -std=gnu++20 -arch arm64 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden
+CXX_FLAGSarm64 = -O3 -DNDEBUG -std=gnu++20 -arch arm64 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden
 
-CXX_FLAGS = -std=gnu++20 -arch arm64 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++20 -arch arm64 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden
 

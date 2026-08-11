@@ -1,163 +1,143 @@
 #include "PluginEditor.h"
 #include "PluginProcessor.h"
 #include <BinaryData.h>
+#include <cmath>
 
 FisEQAudioProcessorEditor::FisEQAudioProcessorEditor(FisEQAudioProcessor& p)
     : AudioProcessorEditor(&p),
-      audioProcessor(p)
+      audioProcessor(p),
+      eqCurveEditor(p)
 {
-    setSize(600, 400);
+    setSize(900, 500);
+    setResizable(true, true);
+    setResizeLimits(600, 350, 1600, 900);
 
-    auto setupSlider = [](juce::Slider& slider)
-    {
-        slider.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
-        slider.setTextBoxStyle(
-            juce::Slider::TextBoxBelow,
-            false,
-            70,
-            20);
-    };
+    addAndMakeVisible(spectrumDisplay);
+    addAndMakeVisible(eqCurveEditor);
 
-    setupSlider(frequencySlider);
-    setupSlider(gainSlider);
-    setupSlider(qSlider);
+    spectrumDisplay.setSampleRate(audioProcessor.getSampleRate());
 
-    addAndMakeVisible(frequencySlider);
-    addAndMakeVisible(gainSlider);
-    addAndMakeVisible(qSlider);
+    startTimerHz(60);
+}
 
-    frequencyLabel.setText("Frequency", juce::dontSendNotification);
-    gainLabel.setText("Gain", juce::dontSendNotification);
-    qLabel.setText("Q", juce::dontSendNotification);
+FisEQAudioProcessorEditor::~FisEQAudioProcessorEditor()
+{
+    stopTimer();
+}
 
-    frequencyLabel.setJustificationType(juce::Justification::centred);
-    gainLabel.setJustificationType(juce::Justification::centred);
-    qLabel.setJustificationType(juce::Justification::centred);
-
-    addAndMakeVisible(frequencyLabel);
-    addAndMakeVisible(gainLabel);
-    addAndMakeVisible(qLabel);
-
-    frequencyAttachment = std::make_unique<SliderAttachment>(
-        audioProcessor.parameters,
-        "frequency",
-        frequencySlider);
-
-    gainAttachment = std::make_unique<SliderAttachment>(
-        audioProcessor.parameters,
-        "gain",
-        gainSlider);
-
-    qAttachment = std::make_unique<SliderAttachment>(
-        audioProcessor.parameters,
-        "q",
-        qSlider);
+void FisEQAudioProcessorEditor::timerCallback()
+{
+    spectrumDisplay.setSampleRate(audioProcessor.getSampleRate());
+    spectrumDisplay.updateSpectrum(audioProcessor.getAnalyzer());
+    eqCurveEditor.updateCurve();
 }
 
 void FisEQAudioProcessorEditor::paint(juce::Graphics& g)
 {
-    g.fillAll(juce::Colours::black);
-        juce::Rectangle<int> graphArea(
-    40,
-    60,
-    getWidth() - 80,
-    110
-    );
-    g.setColour(juce::Colour(0xff1b1b1b));
-    g.fillRoundedRectangle(
-    graphArea.toFloat(),
-    8.0f
-    );
-    g.setColour(juce::Colours::grey);
+    // Dark background
+    g.fillAll(juce::Colour(0xff0a0e17));
 
-    g.drawRoundedRectangle(
-        graphArea.toFloat(),
-        8.0f,
-        1.0f
-    );
-    g.setColour(juce::Colours::darkgrey);
-    
-    auto frequency =
-    audioProcessor.parameters.getRawParameterValue("frequency")->load();
+    auto bounds = getLocalBounds();
 
-    auto gain =
-        audioProcessor.parameters.getRawParameterValue("gain")->load();
+    // Top bar with logo
+    auto topBar = bounds.removeFromTop(44);
+    g.setColour(juce::Colour(0xff0d1220));
+    g.fillRect(topBar);
 
-    auto q =
-        audioProcessor.parameters.getRawParameterValue("q")->load();
-    juce::Path response;
-
-
-    for (int x = 0; x < graphArea.getWidth(); ++x)
-    {
-        float normX = (float)x / (float)graphArea.getWidth();
-
-        float freqPos =
-            std::log10(frequency / 20.0f)
-            / std::log10(20000.0f / 20.0f);
-
-        float sigma = 0.15f / q;
-
-        float bell =
-            std::exp(
-                -0.5f *
-                std::pow((normX - freqPos) / sigma, 2.0f)
-            );
-
-        float y =
-            graphArea.getCentreY()
-            - gain * bell * 3.0f;
-
-        if (x == 0)
-            response.startNewSubPath(
-                (float)graphArea.getX(),
-                y);
-        else
-            response.lineTo(
-                (float)(graphArea.getX() + x),
-                y);
-    }
-    g.setColour(juce::Colour(0xff1640C9));
-    g.strokePath(
-        response,
-        juce::PathStrokeType(2.5f)
-    );
-
-    g.drawHorizontalLine(
-        graphArea.getCentreY(),
-        (float)graphArea.getX(),
-        (float)graphArea.getRight()
-    );
-
-    g.setColour(juce::Colour(0xff1640C9));
-
+    // Logo
     auto typeface = juce::Typeface::createSystemTypefaceFor(
         BinaryData::MAROLA___TTF,
         BinaryData::MAROLA___TTFSize);
 
-    juce::Font logoFont(typeface);
-    logoFont.setHeight(40.0f);
-
+    juce::Font logoFont(juce::FontOptions(typeface).withHeight(28.0f));
     g.setFont(logoFont);
+    g.setColour(juce::Colour(0xff00d4ff));
+    g.drawText("FisEQ", topBar.reduced(16, 0), juce::Justification::centredLeft);
 
-    g.drawFittedText(
-        "FisEQ",
-        0,
-        10,
-        getWidth(),
-        40,
-        juce::Justification::centred,
-        1
-    );
+    // Subtitle
+    g.setFont(12.0f);
+    g.setColour(juce::Colours::white.withAlpha(0.4f));
+    g.drawText("5-Band Parametric EQ", topBar.reduced(16, 0), juce::Justification::centredRight);
+
+    // Bottom area for frequency labels
+    auto bottomBar = bounds.removeFromBottom(22);
+    drawFrequencyLabels(g, bottomBar);
+
+    // Left area for dB labels
+    auto leftBar = bounds.removeFromLeft(32);
+    drawDBLabels(g, leftBar);
+
+    // Graph border
+    auto graphArea = bounds.reduced(1);
+    g.setColour(juce::Colour(0xff1a2035));
+    g.drawRect(graphArea, 1);
 }
 
 void FisEQAudioProcessorEditor::resized()
 {
-    frequencySlider.setBounds(60, 120, 120, 120);
-    gainSlider.setBounds(240, 120, 120, 120);
-    qSlider.setBounds(420, 120, 120, 120);
+    auto bounds = getLocalBounds();
 
-    frequencyLabel.setBounds(60, 245, 120, 20);
-    gainLabel.setBounds(240, 245, 120, 20);
-    qLabel.setBounds(420, 245, 120, 20);
+    // Remove top bar
+    bounds.removeFromTop(44);
+    // Remove bottom label area
+    bounds.removeFromBottom(22);
+    // Remove left dB label area
+    bounds.removeFromLeft(32);
+
+    auto graphArea = bounds.reduced(1);
+
+    // Both components overlap the same area (spectrogram behind, curve on top)
+    spectrumDisplay.setBounds(graphArea);
+    eqCurveEditor.setBounds(graphArea);
+}
+
+void FisEQAudioProcessorEditor::drawFrequencyLabels(juce::Graphics& g, juce::Rectangle<int> area)
+{
+    g.setFont(10.0f);
+    g.setColour(juce::Colours::white.withAlpha(0.45f));
+
+    const float freqs[] = { 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000 };
+    const char* labels[] = { "20", "50", "100", "200", "500", "1k", "2k", "5k", "10k", "20k" };
+
+    float graphLeft = static_cast<float>(area.getX() + 32); // offset for dB label area
+    float graphWidth = static_cast<float>(area.getWidth() - 32);
+
+    for (int i = 0; i < 10; ++i)
+    {
+        float normX = std::log10(freqs[i] / 20.0f) / std::log10(20000.0f / 20.0f);
+        float x = graphLeft + normX * graphWidth;
+
+        g.drawText(labels[i],
+                   static_cast<int>(x - 15), area.getY(),
+                   30, area.getHeight(),
+                   juce::Justification::centred);
+    }
+}
+
+void FisEQAudioProcessorEditor::drawDBLabels(juce::Graphics& g, juce::Rectangle<int> area)
+{
+    g.setFont(9.0f);
+    g.setColour(juce::Colours::white.withAlpha(0.4f));
+
+    float h = static_cast<float>(area.getHeight());
+
+    const float dbs[] = { 24, 12, 0, -12, -24 };
+
+    for (float db : dbs)
+    {
+        // Map dB to Y: 0dB at center, +24 at top, -24 at bottom
+        float normY = 0.5f - (db / 24.0f) * 0.5f;
+        int y = area.getY() + static_cast<int>(normY * h);
+
+        juce::String label;
+        if (db > 0)
+            label = "+" + juce::String(static_cast<int>(db));
+        else
+            label = juce::String(static_cast<int>(db));
+
+        g.drawText(label,
+                   area.getX(), y - 6,
+                   area.getWidth() - 2, 12,
+                   juce::Justification::centredRight);
+    }
 }
