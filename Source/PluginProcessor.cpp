@@ -45,6 +45,13 @@ FisEQAudioProcessor::createParameterLayout()
             0.707f));
     }
 
+    // Output gain parameter
+    params.push_back(std::make_unique<juce::AudioParameterFloat>(
+        "output_gain",
+        "Output Gain",
+        juce::NormalisableRange<float>(-24.0f, 24.0f, 0.1f),
+        0.0f));
+
     return { params.begin(), params.end() };
 }
 
@@ -89,6 +96,11 @@ void FisEQAudioProcessor::processBlock(juce::AudioBuffer<float>& buffer,
         bands[static_cast<size_t>(i)].update(freq, gain, q, bandTypes[static_cast<size_t>(i)]);
         bands[static_cast<size_t>(i)].process(buffer);
     }
+
+    // Apply output gain
+    float outputGainDB = parameters.getRawParameterValue("output_gain")->load();
+    float outputGain = juce::Decibels::decibelsToGain(outputGainDB);
+    buffer.applyGain(outputGain);
 
     // Push post-EQ audio to spectrum analyzer (mono mix for display)
     const int numSamples = buffer.getNumSamples();

@@ -14,8 +14,12 @@ FisEQAudioProcessorEditor::FisEQAudioProcessorEditor(FisEQAudioProcessor& p)
 
     addAndMakeVisible(spectrumDisplay);
     addAndMakeVisible(eqCurveEditor);
+    addAndMakeVisible(gainKnob);
 
     spectrumDisplay.setSampleRate(audioProcessor.getSampleRate());
+
+    gainAttachment = std::make_unique<SliderAttachment>(
+        audioProcessor.parameters, "output_gain", gainKnob.getSlider());
 
     startTimerHz(60);
 }
@@ -124,9 +128,13 @@ void FisEQAudioProcessorEditor::resized()
 {
     auto bounds = getLocalBounds();
 
-    bounds.removeFromTop(48);
+    auto topBar = bounds.removeFromTop(48);
     bounds.removeFromBottom(24);
     bounds.removeFromLeft(36);
+
+    // Gain knob in the top bar, right-of-center area
+    auto knobArea = topBar.removeFromRight(70).reduced(2, 2);
+    gainKnob.setBounds(knobArea);
 
     auto graphArea = bounds.reduced(1);
 

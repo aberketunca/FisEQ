@@ -47,6 +47,7 @@ target_sources(FisEQ PRIVATE
     Source/GUI/SpectrumDisplay.h
     Source/GUI/EQCurveEditor.cpp
     Source/GUI/EQCurveEditor.h
+    Source/GUI/GainKnob.h
 )
 
 target_compile_definitions(FisEQ PRIVATE
