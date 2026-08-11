@@ -20,11 +20,9 @@ private:
 
     FisEQAudioProcessor& audioProcessor;
 
-    // Main visualization components (layered)
     SpectrumDisplay spectrumDisplay;
     EQCurveEditor eqCurveEditor;
 
-    // Frequency axis labels
     void drawFrequencyLabels(juce::Graphics& g, juce::Rectangle<int> area);
     void drawDBLabels(juce::Graphics& g, juce::Rectangle<int> area);
 

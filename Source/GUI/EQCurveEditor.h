@@ -7,8 +7,8 @@
 
 /**
  * Interactive EQ curve overlay.
- * Draws the composite magnitude response of all bands,
- * and provides draggable nodes for each band's frequency/gain.
+ * Draws the composite magnitude response with glow effects,
+ * and provides draggable nodes with rich visual feedback.
  */
 class EQCurveEditor : public juce::Component
 {
@@ -29,15 +29,15 @@ public:
 private:
     FisEQAudioProcessor& processor;
 
-    // Frequency-axis helpers (log scale 20–20kHz)
+    // Frequency-axis helpers (log scale 20-20kHz)
     float frequencyToX(float freq) const;
     float xToFrequency(float normX) const;
 
-    // dB-axis helpers (range: ±24 dB centered)
+    // dB-axis helpers (range: +/-24 dB centered)
     float dbToY(float db) const;
-    float yToDb(float normY) const;
+    float yToDb(float y) const;
 
-    // Node positions on screen (recalculated each frame)
+    // Node positions on screen
     struct BandNode
     {
         juce::Point<float> position;
@@ -46,27 +46,29 @@ private:
 
     std::array<BandNode, FisEQAudioProcessor::numBands> nodes;
 
-    int draggedBand = -1;   // -1 = nothing being dragged
-    int hoveredBand = -1;   // -1 = no hover
+    int draggedBand = -1;
+    int hoveredBand = -1;
 
-    static constexpr float nodeRadius = 7.0f;
-    static constexpr float nodeHitRadius = 14.0f;
+    static constexpr float nodeRadius = 8.0f;
+    static constexpr float nodeHitRadius = 16.0f;
 
     static constexpr float minFreq = 20.0f;
     static constexpr float maxFreq = 20000.0f;
     static constexpr float minDB = -24.0f;
     static constexpr float maxDB = 24.0f;
 
-    // Band colors
+    // Band colors — vibrant, distinct, modern palette
     static constexpr std::array<juce::uint32, 5> bandColours = {
-        0xffff6b6b,  // red
-        0xfffeca57,  // yellow
-        0xff48dbfb,  // cyan
-        0xff00d2d3,  // teal
-        0xffff9ff3   // pink
+        0xfff472b6,  // pink
+        0xfffbbf24,  // amber
+        0xff34d399,  // emerald
+        0xff60a5fa,  // blue
+        0xffc084fc   // purple
     };
 
     int findBandAt(juce::Point<float> pos) const;
+
+    void drawPerBandCurve(juce::Graphics& g, int bandIndex, float w, float h);
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(EQCurveEditor)
 };

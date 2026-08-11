@@ -20,7 +20,6 @@ float EQCurveEditor::xToFrequency(float normX) const
 
 float EQCurveEditor::dbToY(float db) const
 {
-    // 0 dB is at centre; +maxDB is at top; -maxDB is at bottom
     float h = static_cast<float>(getHeight());
     return h * 0.5f - (db / maxDB) * h * 0.5f;
 }
@@ -33,7 +32,6 @@ float EQCurveEditor::yToDb(float y) const
 
 void EQCurveEditor::updateCurve()
 {
-    // Update node positions from current parameter values
     for (int i = 0; i < FisEQAudioProcessor::numBands; ++i)
     {
         auto prefix = "band" + juce::String(i + 1) + "_";
@@ -50,6 +48,45 @@ void EQCurveEditor::updateCurve()
     repaint();
 }
 
+void EQCurveEditor::drawPerBandCurve(juce::Graphics& g, int bandIndex, float w, float h)
+{
+    auto& band = processor.getBand(bandIndex);
+    auto colour = juce::Colour(bandColours[static_cast<size_t>(bandIndex)]);
+
+    juce::Path bandPath;
+    const int numPoints = static_cast<int>(w / 2.0f);
+
+    for (int px = 0; px <= numPoints; ++px)
+    {
+        float normX = static_cast<float>(px) / static_cast<float>(numPoints);
+        float freq = xToFrequency(normX);
+
+        double mag = band.getMagnitudeAtFrequency(static_cast<double>(freq));
+        float db = static_cast<float>(juce::Decibels::gainToDecibels(mag, -100.0));
+        float y = dbToY(db);
+        float x = normX * w;
+
+        if (px == 0)
+            bandPath.startNewSubPath(x, y);
+        else
+            bandPath.lineTo(x, y);
+    }
+
+    // Subtle per-band fill
+    juce::Path fillPath(bandPath);
+    fillPath.lineTo(w, h * 0.5f);
+    fillPath.lineTo(0.0f, h * 0.5f);
+    fillPath.closeSubPath();
+
+    bool isActive = (bandIndex == hoveredBand || bandIndex == draggedBand);
+    g.setColour(colour.withAlpha(isActive ? 0.08f : 0.03f));
+    g.fillPath(fillPath);
+
+    // Per-band curve stroke (subtle)
+    g.setColour(colour.withAlpha(isActive ? 0.45f : 0.15f));
+    g.strokePath(bandPath, juce::PathStrokeType(isActive ? 1.5f : 0.8f));
+}
+
 void EQCurveEditor::paint(juce::Graphics& g)
 {
     auto bounds = getLocalBounds().toFloat();
@@ -59,18 +96,24 @@ void EQCurveEditor::paint(juce::Graphics& g)
     if (w <= 0 || h <= 0)
         return;
 
-    // Draw 0 dB center line
-    g.setColour(juce::Colours::white.withAlpha(0.12f));
-    g.drawHorizontalLine(static_cast<int>(h * 0.5f), 0.0f, w);
+    // === Grid: 0 dB center line (most prominent) ===
+    g.setColour(juce::Colours::white.withAlpha(0.08f));
+    float centerY = h * 0.5f;
+    g.drawHorizontalLine(static_cast<int>(centerY), 0.0f, w);
 
-    // Draw ±6, ±12, ±18 dB lines
+    // +/-6, 12, 18 dB lines
+    g.setColour(juce::Colours::white.withAlpha(0.035f));
     for (float db : { -18.0f, -12.0f, -6.0f, 6.0f, 12.0f, 18.0f })
     {
         float y = dbToY(db);
         g.drawHorizontalLine(static_cast<int>(y), 0.0f, w);
     }
 
-    // Draw composite EQ curve
+    // === Per-band individual curves (background layer) ===
+    for (int i = 0; i < FisEQAudioProcessor::numBands; ++i)
+        drawPerBandCurve(g, i, w, h);
+
+    // === Composite EQ curve ===
     juce::Path curvePath;
     const int numPoints = static_cast<int>(w);
 
@@ -89,49 +132,77 @@ void EQCurveEditor::paint(juce::Graphics& g)
             curvePath.lineTo(static_cast<float>(px), y);
     }
 
-    // Stroke the curve
-    g.setColour(juce::Colours::white.withAlpha(0.85f));
-    g.strokePath(curvePath, juce::PathStrokeType(2.0f));
-
-    // Fill below/above 0 dB with subtle colour
+    // Composite fill (subtle white sheen above/below 0 dB)
     juce::Path fillPath(curvePath);
-    fillPath.lineTo(w, h * 0.5f);
-    fillPath.lineTo(0.0f, h * 0.5f);
+    fillPath.lineTo(w, centerY);
+    fillPath.lineTo(0.0f, centerY);
     fillPath.closeSubPath();
 
-    g.setColour(juce::Colours::white.withAlpha(0.04f));
+    g.setColour(juce::Colours::white.withAlpha(0.03f));
     g.fillPath(fillPath);
 
-    // Draw band nodes
+    // Composite curve: 3-pass glow
+    g.setColour(juce::Colours::white.withAlpha(0.12f));
+    g.strokePath(curvePath, juce::PathStrokeType(5.0f));
+
+    g.setColour(juce::Colours::white.withAlpha(0.3f));
+    g.strokePath(curvePath, juce::PathStrokeType(2.5f));
+
+    g.setColour(juce::Colours::white.withAlpha(0.9f));
+    g.strokePath(curvePath, juce::PathStrokeType(1.2f));
+
+    // === Band nodes ===
     for (int i = 0; i < FisEQAudioProcessor::numBands; ++i)
     {
         auto& node = nodes[static_cast<size_t>(i)];
-        float r = (i == hoveredBand || i == draggedBand) ? nodeRadius * 1.4f : nodeRadius;
+        bool isActive = (i == hoveredBand || i == draggedBand);
+        float r = isActive ? nodeRadius * 1.5f : nodeRadius;
 
-        // Outer glow
-        g.setColour(node.colour.withAlpha(0.25f));
-        g.fillEllipse(node.position.x - r * 1.5f,
-                      node.position.y - r * 1.5f,
-                      r * 3.0f, r * 3.0f);
+        // Connection line from node to 0 dB line
+        g.setColour(node.colour.withAlpha(isActive ? 0.3f : 0.12f));
+        g.drawLine(node.position.x, node.position.y,
+                   node.position.x, centerY, 1.0f);
 
-        // Solid circle
-        g.setColour(node.colour);
-        g.fillEllipse(node.position.x - r,
-                      node.position.y - r,
-                      r * 2.0f, r * 2.0f);
+        // Outer radial glow
+        {
+            float glowR = r * 3.0f;
+            juce::ColourGradient glow(
+                node.colour.withAlpha(isActive ? 0.35f : 0.15f),
+                node.position.x, node.position.y,
+                node.colour.withAlpha(0.0f),
+                node.position.x + glowR, node.position.y,
+                true); // radial
+            g.setGradientFill(glow);
+            g.fillEllipse(node.position.x - glowR,
+                          node.position.y - glowR,
+                          glowR * 2.0f, glowR * 2.0f);
+        }
 
-        // White border
-        g.setColour(juce::Colours::white.withAlpha(0.8f));
-        g.drawEllipse(node.position.x - r,
-                      node.position.y - r,
-                      r * 2.0f, r * 2.0f, 1.2f);
+        // Main circle — filled with slight gradient
+        {
+            float d = r * 2.0f;
+            juce::ColourGradient nodeFill(
+                node.colour.brighter(0.3f),
+                node.position.x, node.position.y - r,
+                node.colour.darker(0.2f),
+                node.position.x, node.position.y + r,
+                false);
+            g.setGradientFill(nodeFill);
+            g.fillEllipse(node.position.x - r, node.position.y - r, d, d);
+        }
 
-        // Band number label
-        g.setColour(juce::Colours::white);
-        g.setFont(10.0f);
-        g.drawText(juce::String(i + 1),
-                   juce::Rectangle<float>(node.position.x - 6, node.position.y - 5, 12, 10),
-                   juce::Justification::centred);
+        // Highlight ring
+        g.setColour(juce::Colours::white.withAlpha(isActive ? 0.7f : 0.35f));
+        g.drawEllipse(node.position.x - r, node.position.y - r,
+                      r * 2.0f, r * 2.0f,
+                      isActive ? 1.8f : 1.0f);
+
+        // Inner highlight dot
+        g.setColour(juce::Colours::white.withAlpha(0.6f));
+        float dotR = r * 0.25f;
+        g.fillEllipse(node.position.x - dotR - r * 0.2f,
+                      node.position.y - dotR - r * 0.25f,
+                      dotR * 2.0f, dotR * 2.0f);
     }
 }
 

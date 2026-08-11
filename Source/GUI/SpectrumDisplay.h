@@ -6,8 +6,8 @@
 
 /**
  * Real-time spectrum analyzer display.
- * Renders FFT magnitude data as a filled gradient spectrum
- * with logarithmic frequency axis and smooth decay.
+ * Multi-layered rendering: filled gradient + glow stroke + peak hold.
+ * Logarithmic frequency axis, smooth decay, rich color palette.
  */
 class SpectrumDisplay : public juce::Component
 {
@@ -30,25 +30,24 @@ private:
     /** Map an X position (0..1) back to frequency (Hz). */
     float xToFrequency(float normX) const;
 
+    /** Build the spectrum path from display magnitudes. */
+    void buildSpectrumPath(juce::Path& path, float w, float h, float heightScale) const;
+
     // Smoothed display magnitudes (what we actually render)
     std::array<float, SpectrumAnalyzer::numBins> displayMagnitudes{};
+
+    // Peak hold values (slower decay)
+    std::array<float, SpectrumAnalyzer::numBins> peakMagnitudes{};
 
     // Raw data from last pull
     std::array<float, SpectrumAnalyzer::numBins> rawMagnitudes{};
 
     double sampleRate = 44100.0;
 
-    // Smoothing factor (0 = no smoothing, 1 = infinite hold)
-    static constexpr float decayRate = 0.78f;
-    static constexpr float riseRate  = 0.92f;
-
-    // Path cache for the spectrum fill
-    juce::Path spectrumPath;
-
-    // Gradient colors
-    juce::Colour bottomColour{ 0xff0a1628 };   // dark navy
-    juce::Colour midColour{ 0xff1640C9 };      // blue
-    juce::Colour topColour{ 0xff00d4ff };       // cyan
+    // Smoothing parameters
+    static constexpr float decayRate = 0.82f;
+    static constexpr float riseRate  = 0.93f;
+    static constexpr float peakDecay = 0.992f;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(SpectrumDisplay)
 };

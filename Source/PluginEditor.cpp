@@ -8,9 +8,9 @@ FisEQAudioProcessorEditor::FisEQAudioProcessorEditor(FisEQAudioProcessor& p)
       audioProcessor(p),
       eqCurveEditor(p)
 {
-    setSize(900, 500);
+    setSize(960, 540);
     setResizable(true, true);
-    setResizeLimits(600, 350, 1600, 900);
+    setResizeLimits(640, 380, 1920, 1080);
 
     addAndMakeVisible(spectrumDisplay);
     addAndMakeVisible(eqCurveEditor);
@@ -34,82 +34,128 @@ void FisEQAudioProcessorEditor::timerCallback()
 
 void FisEQAudioProcessorEditor::paint(juce::Graphics& g)
 {
-    // Dark background
-    g.fillAll(juce::Colour(0xff0a0e17));
-
     auto bounds = getLocalBounds();
+    float w = static_cast<float>(bounds.getWidth());
+    float h = static_cast<float>(bounds.getHeight());
 
-    // Top bar with logo
-    auto topBar = bounds.removeFromTop(44);
-    g.setColour(juce::Colour(0xff0d1220));
-    g.fillRect(topBar);
+    // === Rich dark background with subtle radial vignette ===
+    g.fillAll(juce::Colour(0xff080c14));
+
+    // Subtle radial gradient emanating from center — gives depth
+    {
+        juce::ColourGradient vignette(
+            juce::Colour(0xff101828), w * 0.5f, h * 0.45f,
+            juce::Colour(0xff050810), 0.0f, h,
+            true); // radial
+        g.setGradientFill(vignette);
+        g.fillRect(bounds);
+    }
+
+    // === Top bar ===
+    auto topBar = bounds.removeFromTop(48);
+
+    // Top bar gradient
+    {
+        juce::ColourGradient topGrad(
+            juce::Colour(0xff0f1629), 0.0f, static_cast<float>(topBar.getY()),
+            juce::Colour(0xff080c14), 0.0f, static_cast<float>(topBar.getBottom()),
+            false);
+        g.setGradientFill(topGrad);
+        g.fillRect(topBar);
+    }
+
+    // Separator line under top bar
+    g.setColour(juce::Colour(0xff1e293b));
+    g.drawHorizontalLine(topBar.getBottom() - 1, 0.0f, w);
 
     // Logo
     auto typeface = juce::Typeface::createSystemTypefaceFor(
         BinaryData::MAROLA___TTF,
         BinaryData::MAROLA___TTFSize);
 
-    juce::Font logoFont(juce::FontOptions(typeface).withHeight(28.0f));
+    juce::Font logoFont(juce::FontOptions(typeface).withHeight(30.0f));
     g.setFont(logoFont);
-    g.setColour(juce::Colour(0xff00d4ff));
-    g.drawText("FisEQ", topBar.reduced(16, 0), juce::Justification::centredLeft);
+
+    // Logo with subtle glow effect
+    g.setColour(juce::Colour(0xff06b6d4).withAlpha(0.3f));
+    g.drawText("FisEQ", topBar.reduced(18, 0).translated(1, 1),
+               juce::Justification::centredLeft);
+    g.setColour(juce::Colour(0xff22d3ee));
+    g.drawText("FisEQ", topBar.reduced(18, 0),
+               juce::Justification::centredLeft);
 
     // Subtitle
-    g.setFont(12.0f);
-    g.setColour(juce::Colours::white.withAlpha(0.4f));
-    g.drawText("5-Band Parametric EQ", topBar.reduced(16, 0), juce::Justification::centredRight);
+    g.setFont(11.0f);
+    g.setColour(juce::Colour(0xff64748b));
+    g.drawText("5-BAND PARAMETRIC EQ", topBar.reduced(18, 0),
+               juce::Justification::centredRight);
 
-    // Bottom area for frequency labels
-    auto bottomBar = bounds.removeFromBottom(22);
+    // === Bottom area for frequency labels ===
+    auto bottomBar = bounds.removeFromBottom(24);
     drawFrequencyLabels(g, bottomBar);
 
-    // Left area for dB labels
-    auto leftBar = bounds.removeFromLeft(32);
+    // Bottom separator
+    g.setColour(juce::Colour(0xff1e293b));
+    g.drawHorizontalLine(bottomBar.getY(), 0.0f, w);
+
+    // === Left area for dB labels ===
+    auto leftBar = bounds.removeFromLeft(36);
     drawDBLabels(g, leftBar);
 
-    // Graph border
+    // Left separator
+    g.setColour(juce::Colour(0xff1e293b));
+    g.drawVerticalLine(leftBar.getRight(), static_cast<float>(leftBar.getY()),
+                       static_cast<float>(leftBar.getBottom()));
+
+    // === Graph area subtle inner shadow ===
     auto graphArea = bounds.reduced(1);
-    g.setColour(juce::Colour(0xff1a2035));
-    g.drawRect(graphArea, 1);
+    {
+        // Top inner shadow
+        juce::ColourGradient topShadow(
+            juce::Colour(0x15000000), 0.0f, static_cast<float>(graphArea.getY()),
+            juce::Colours::transparentBlack, 0.0f, static_cast<float>(graphArea.getY() + 20),
+            false);
+        g.setGradientFill(topShadow);
+        g.fillRect(graphArea.getX(), graphArea.getY(), graphArea.getWidth(), 20);
+    }
 }
 
 void FisEQAudioProcessorEditor::resized()
 {
     auto bounds = getLocalBounds();
 
-    // Remove top bar
-    bounds.removeFromTop(44);
-    // Remove bottom label area
-    bounds.removeFromBottom(22);
-    // Remove left dB label area
-    bounds.removeFromLeft(32);
+    bounds.removeFromTop(48);
+    bounds.removeFromBottom(24);
+    bounds.removeFromLeft(36);
 
     auto graphArea = bounds.reduced(1);
 
-    // Both components overlap the same area (spectrogram behind, curve on top)
     spectrumDisplay.setBounds(graphArea);
     eqCurveEditor.setBounds(graphArea);
 }
 
 void FisEQAudioProcessorEditor::drawFrequencyLabels(juce::Graphics& g, juce::Rectangle<int> area)
 {
-    g.setFont(10.0f);
-    g.setColour(juce::Colours::white.withAlpha(0.45f));
+    g.setFont(9.5f);
 
     const float freqs[] = { 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000 };
     const char* labels[] = { "20", "50", "100", "200", "500", "1k", "2k", "5k", "10k", "20k" };
 
-    float graphLeft = static_cast<float>(area.getX() + 32); // offset for dB label area
-    float graphWidth = static_cast<float>(area.getWidth() - 32);
+    float graphLeft = static_cast<float>(area.getX() + 36);
+    float graphWidth = static_cast<float>(area.getWidth() - 36);
 
     for (int i = 0; i < 10; ++i)
     {
         float normX = std::log10(freqs[i] / 20.0f) / std::log10(20000.0f / 20.0f);
         float x = graphLeft + normX * graphWidth;
 
+        // Emphasize decade markers
+        bool isMajor = (i == 2 || i == 5 || i == 8); // 100, 1k, 10k
+        g.setColour(juce::Colour(isMajor ? 0xff94a3b8 : 0xff475569));
+
         g.drawText(labels[i],
-                   static_cast<int>(x - 15), area.getY(),
-                   30, area.getHeight(),
+                   static_cast<int>(x - 16), area.getY() + 4,
+                   32, area.getHeight() - 4,
                    juce::Justification::centred);
     }
 }
@@ -117,7 +163,6 @@ void FisEQAudioProcessorEditor::drawFrequencyLabels(juce::Graphics& g, juce::Rec
 void FisEQAudioProcessorEditor::drawDBLabels(juce::Graphics& g, juce::Rectangle<int> area)
 {
     g.setFont(9.0f);
-    g.setColour(juce::Colours::white.withAlpha(0.4f));
 
     float h = static_cast<float>(area.getHeight());
 
@@ -125,19 +170,23 @@ void FisEQAudioProcessorEditor::drawDBLabels(juce::Graphics& g, juce::Rectangle<
 
     for (float db : dbs)
     {
-        // Map dB to Y: 0dB at center, +24 at top, -24 at bottom
         float normY = 0.5f - (db / 24.0f) * 0.5f;
         int y = area.getY() + static_cast<int>(normY * h);
+
+        bool isZero = (static_cast<int>(db) == 0);
+        g.setColour(juce::Colour(isZero ? 0xff94a3b8 : 0xff475569));
 
         juce::String label;
         if (db > 0)
             label = "+" + juce::String(static_cast<int>(db));
+        else if (isZero)
+            label = "0 dB";
         else
             label = juce::String(static_cast<int>(db));
 
         g.drawText(label,
-                   area.getX(), y - 6,
-                   area.getWidth() - 2, 12,
+                   area.getX() + 2, y - 6,
+                   area.getWidth() - 4, 12,
                    juce::Justification::centredRight);
     }
 }

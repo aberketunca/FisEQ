@@ -22,6 +22,9 @@ juce_add_plugin(FisEQ
     VST3_AUTO_MANIFEST FALSE
 
     PRODUCT_NAME "FisEQ"
+
+    MICROPHONE_PERMISSION_ENABLED TRUE
+    MICROPHONE_PERMISSION_TEXT "FisEQ needs microphone access to analyze and process audio input."
 )
 
 juce_add_binary_data(FisEQAssets
@@ -50,6 +53,7 @@ target_compile_definitions(FisEQ PRIVATE
     JUCE_WEB_BROWSER=0
     JUCE_USE_CURL=0
     JUCE_VST3_CAN_REPLACE_VST2=0
+    JUCE_MICROPHONE_PERMISSION_ENABLED=1
 )
 
 target_link_libraries(FisEQ PRIVATE
