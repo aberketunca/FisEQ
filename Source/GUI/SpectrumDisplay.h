@@ -5,9 +5,10 @@
 #include <array>
 
 /**
- * Real-time spectrum analyzer display.
- * Multi-layered rendering: filled gradient + glow stroke + peak hold.
- * Logarithmic frequency axis, smooth decay, rich color palette.
+ * Scientific real-time spectrum analyzer display.
+ * Precise dBFS-calibrated rendering with analytical grid,
+ * octave-band markers, thin line rendering, and subtle fill.
+ * Designed to look like a measurement tool, not a visualizer.
  */
 class SpectrumDisplay : public juce::Component
 {
@@ -24,30 +25,35 @@ public:
     void setSampleRate(double sr) { sampleRate = sr; }
 
 private:
-    /** Map a frequency (Hz) to an X position (0..1) on log scale. */
     float frequencyToX(float freq) const;
-
-    /** Map an X position (0..1) back to frequency (Hz). */
     float xToFrequency(float normX) const;
 
-    /** Build the spectrum path from display magnitudes. */
-    void buildSpectrumPath(juce::Path& path, float w, float h, float heightScale) const;
+    /** Map dB value to Y coordinate (scientific scale: 0 dBFS at top, -100 dBFS at bottom). */
+    float dbToY(float db, float h) const;
 
-    // Smoothed display magnitudes (what we actually render)
+    /** Build spectrum path with dBFS calibration. */
+    void buildAnalyzerPath(juce::Path& path, float w, float h,
+                           const std::array<float, SpectrumAnalyzer::numBins>& mags) const;
+
+    // Smoothed display magnitudes
     std::array<float, SpectrumAnalyzer::numBins> displayMagnitudes{};
 
-    // Peak hold values (slower decay)
+    // Peak hold values (slower decay — thin line)
     std::array<float, SpectrumAnalyzer::numBins> peakMagnitudes{};
 
-    // Raw data from last pull
+    // Raw data
     std::array<float, SpectrumAnalyzer::numBins> rawMagnitudes{};
 
     double sampleRate = 44100.0;
 
-    // Smoothing parameters
-    static constexpr float decayRate = 0.82f;
-    static constexpr float riseRate  = 0.93f;
-    static constexpr float peakDecay = 0.992f;
+    // Smoothing
+    static constexpr float decayRate = 0.84f;
+    static constexpr float riseRate  = 0.92f;
+    static constexpr float peakDecay = 0.995f;
+
+    // dB range for display
+    static constexpr float maxDBFS = 0.0f;
+    static constexpr float minDBFS = -90.0f;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(SpectrumDisplay)
 };

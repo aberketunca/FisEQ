@@ -6,9 +6,12 @@
 #include <array>
 
 /**
- * Interactive EQ curve overlay.
- * Draws the composite magnitude response with glow effects,
- * and provides draggable nodes with rich visual feedback.
+ * Interactive EQ curve overlay with Pro-Q style interaction:
+ * - Draggable nodes (freq/gain)
+ * - Scroll-wheel Q adjustment
+ * - Floating parameter tooltip
+ * - Double-click to reset
+ * - Visual bandwidth (Q) indicator
  */
 class EQCurveEditor : public juce::Component
 {
@@ -22,6 +25,8 @@ public:
     void mouseDrag(const juce::MouseEvent& e) override;
     void mouseUp(const juce::MouseEvent& e) override;
     void mouseMove(const juce::MouseEvent& e) override;
+    void mouseDoubleClick(const juce::MouseEvent& e) override;
+    void mouseWheelMove(const juce::MouseEvent& e, const juce::MouseWheelDetails& wheel) override;
 
     /** Call to refresh the curve (typically from timer). */
     void updateCurve();
@@ -29,15 +34,11 @@ public:
 private:
     FisEQAudioProcessor& processor;
 
-    // Frequency-axis helpers (log scale 20-20kHz)
     float frequencyToX(float freq) const;
     float xToFrequency(float normX) const;
-
-    // dB-axis helpers (range: +/-24 dB centered)
     float dbToY(float db) const;
     float yToDb(float y) const;
 
-    // Node positions on screen
     struct BandNode
     {
         juce::Point<float> position;
@@ -49,6 +50,14 @@ private:
     int draggedBand = -1;
     int hoveredBand = -1;
 
+    // Tooltip state
+    bool showTooltip = false;
+    juce::Point<float> tooltipPos;
+    float tooltipFreq = 0.0f;
+    float tooltipGain = 0.0f;
+    float tooltipQ = 0.0f;
+    int tooltipBand = -1;
+
     static constexpr float nodeRadius = 8.0f;
     static constexpr float nodeHitRadius = 16.0f;
 
@@ -57,7 +66,6 @@ private:
     static constexpr float minDB = -24.0f;
     static constexpr float maxDB = 24.0f;
 
-    // Band colors — vibrant, distinct, modern palette
     static constexpr std::array<juce::uint32, 5> bandColours = {
         0xfff472b6,  // pink
         0xfffbbf24,  // amber
@@ -67,8 +75,12 @@ private:
     };
 
     int findBandAt(juce::Point<float> pos) const;
-
     void drawPerBandCurve(juce::Graphics& g, int bandIndex, float w, float h);
+    void drawBandwidthIndicator(juce::Graphics& g, int bandIndex, float w, float h);
+    void drawTooltip(juce::Graphics& g);
+
+    /** Format frequency intelligently (Hz vs kHz). */
+    static juce::String formatFrequency(float freq);
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(EQCurveEditor)
 };
