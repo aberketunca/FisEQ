@@ -1,5 +1,6 @@
 #include "PluginEditor.h"
 #include "PluginProcessor.h"
+#include "GUI/Theme.h"
 #include <BinaryData.h>
 #include <cmath>
 
@@ -13,13 +14,33 @@ FisEQAudioProcessorEditor::FisEQAudioProcessorEditor(FisEQAudioProcessor& p)
     setResizeLimits(640, 380, 1920, 1080);
 
     addAndMakeVisible(spectrumDisplay);
+    addAndMakeVisible(spectrogramDisplay);
     addAndMakeVisible(eqCurveEditor);
     addAndMakeVisible(gainKnob);
 
     spectrumDisplay.setSampleRate(audioProcessor.getSampleRate());
+    spectrogramDisplay.setSampleRate(audioProcessor.getSampleRate());
+
+    // View toggle button
+    viewToggleButton.setButtonText("SPECTROGRAM");
+    viewToggleButton.setClickingTogglesState(true);
+    viewToggleButton.onClick = [this]
+    {
+        setViewMode(viewToggleButton.getToggleState()
+                        ? ViewMode::Spectrogram
+                        : ViewMode::EQ);
+    };
+    // Vintage-tinted button colours
+    viewToggleButton.setColour(juce::TextButton::buttonColourId,    Theme::col(Theme::bgPanel));
+    viewToggleButton.setColour(juce::TextButton::buttonOnColourId,  Theme::col(Theme::accentDeep));
+    viewToggleButton.setColour(juce::TextButton::textColourOffId,   Theme::col(Theme::textMid));
+    viewToggleButton.setColour(juce::TextButton::textColourOnId,    Theme::col(Theme::textBright));
+    addAndMakeVisible(viewToggleButton);
 
     gainAttachment = std::make_unique<SliderAttachment>(
         audioProcessor.parameters, "output_gain", gainKnob.getSlider());
+
+    setViewMode(ViewMode::EQ);
 
     startTimerHz(60);
 }
@@ -31,9 +52,35 @@ FisEQAudioProcessorEditor::~FisEQAudioProcessorEditor()
 
 void FisEQAudioProcessorEditor::timerCallback()
 {
-    spectrumDisplay.setSampleRate(audioProcessor.getSampleRate());
-    spectrumDisplay.updateSpectrum(audioProcessor.getAnalyzer());
-    eqCurveEditor.updateCurve();
+    double sr = audioProcessor.getSampleRate();
+
+    if (viewMode == ViewMode::EQ)
+    {
+        spectrumDisplay.setSampleRate(sr);
+        spectrumDisplay.updateSpectrum(audioProcessor.getAnalyzer());
+        eqCurveEditor.updateCurve();
+    }
+    else
+    {
+        spectrogramDisplay.setSampleRate(sr);
+        spectrogramDisplay.updateSpectrum(audioProcessor.getAnalyzer());
+    }
+}
+
+void FisEQAudioProcessorEditor::setViewMode(ViewMode mode)
+{
+    viewMode = mode;
+
+    bool eq = (mode == ViewMode::EQ);
+
+    spectrumDisplay.setVisible(eq);
+    eqCurveEditor.setVisible(eq);
+    spectrogramDisplay.setVisible(!eq);
+
+    viewToggleButton.setToggleState(!eq, juce::dontSendNotification);
+    viewToggleButton.setButtonText(eq ? "SPECTROGRAM" : "EQ VIEW");
+
+    repaint();
 }
 
 void FisEQAudioProcessorEditor::paint(juce::Graphics& g)
@@ -88,11 +135,12 @@ void FisEQAudioProcessorEditor::paint(juce::Graphics& g)
     g.drawText("FisEQ", topBar.reduced(18, 0),
                juce::Justification::centredLeft);
 
-    // Subtitle
+    // Subtitle — placed just right of the logo, away from the controls
     g.setFont(11.0f);
     g.setColour(juce::Colour(0xff64748b));
-    g.drawText("5-BAND PARAMETRIC EQ", topBar.reduced(18, 0),
-               juce::Justification::centredRight);
+    auto subtitleArea = topBar.withTrimmedLeft(120).withTrimmedRight(230);
+    g.drawText(viewMode == ViewMode::EQ ? "5-BAND PARAMETRIC EQ" : "SPECTROGRAM ANALYSER",
+               subtitleArea, juce::Justification::centredLeft);
 
     // === Bottom area for frequency labels ===
     auto bottomBar = bounds.removeFromBottom(24);
@@ -102,9 +150,10 @@ void FisEQAudioProcessorEditor::paint(juce::Graphics& g)
     g.setColour(juce::Colour(0xff1e293b));
     g.drawHorizontalLine(bottomBar.getY(), 0.0f, w);
 
-    // === Left area for dB labels ===
+    // === Left area for dB labels (EQ mode only) ===
     auto leftBar = bounds.removeFromLeft(36);
-    drawDBLabels(g, leftBar);
+    if (viewMode == ViewMode::EQ)
+        drawDBLabels(g, leftBar);
 
     // Left separator
     g.setColour(juce::Colour(0xff1e293b));
@@ -136,10 +185,16 @@ void FisEQAudioProcessorEditor::resized()
     auto knobArea = topBar.removeFromRight(70).reduced(2, 2);
     gainKnob.setBounds(knobArea);
 
+    // View toggle button, left of the gain knob
+    topBar.removeFromRight(8); // gap
+    auto toggleArea = topBar.removeFromRight(120).reduced(0, 12);
+    viewToggleButton.setBounds(toggleArea);
+
     auto graphArea = bounds.reduced(1);
 
     spectrumDisplay.setBounds(graphArea);
     eqCurveEditor.setBounds(graphArea);
+    spectrogramDisplay.setBounds(graphArea);
 }
 
 void FisEQAudioProcessorEditor::drawFrequencyLabels(juce::Graphics& g, juce::Rectangle<int> area)

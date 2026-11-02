@@ -1558,6 +1558,7 @@ CMakeFiles/FisEQ.dir/Source/PluginEditor.cpp.o: \
   /Users/berke/Desktop/FisEQ/Source/DSP/SpectrumAnalyzer.h \
   /Users/berke/Desktop/FisEQ/Source/GUI/SpectrumDisplay.h \
   /Users/berke/Desktop/FisEQ/Source/GUI/../DSP/SpectrumAnalyzer.h \
+  /Users/berke/Desktop/FisEQ/Source/GUI/SpectrogramDisplay.h \
   /Users/berke/Desktop/FisEQ/Source/GUI/EQCurveEditor.h \
   /Users/berke/Desktop/FisEQ/Source/GUI/../PluginProcessor.h \
   /Users/berke/Desktop/FisEQ/Source/GUI/GainKnob.h \

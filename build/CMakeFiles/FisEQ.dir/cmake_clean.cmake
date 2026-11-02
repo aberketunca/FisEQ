@@ -65,6 +65,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/FisEQ.dir/Source/DSP/SpectrumAnalyzer.cpp.o.d"
   "CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.o"
   "CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.o.d"
+  "CMakeFiles/FisEQ.dir/Source/GUI/SpectrogramDisplay.cpp.o"
+  "CMakeFiles/FisEQ.dir/Source/GUI/SpectrogramDisplay.cpp.o.d"
   "CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.o"
   "CMakeFiles/FisEQ.dir/Source/GUI/SpectrumDisplay.cpp.o.d"
   "CMakeFiles/FisEQ.dir/Source/PluginEditor.cpp.o"

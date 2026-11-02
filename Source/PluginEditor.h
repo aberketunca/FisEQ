@@ -3,6 +3,7 @@
 #include <juce_audio_processors/juce_audio_processors.h>
 #include "PluginProcessor.h"
 #include "GUI/SpectrumDisplay.h"
+#include "GUI/SpectrogramDisplay.h"
 #include "GUI/EQCurveEditor.h"
 #include "GUI/GainKnob.h"
 
@@ -10,6 +11,8 @@ class FisEQAudioProcessorEditor : public juce::AudioProcessorEditor,
                                    private juce::Timer
 {
 public:
+    enum class ViewMode { EQ, Spectrogram };
+
     FisEQAudioProcessorEditor(FisEQAudioProcessor&);
     ~FisEQAudioProcessorEditor() override;
 
@@ -18,11 +21,19 @@ public:
 
 private:
     void timerCallback() override;
+    void setViewMode(ViewMode mode);
 
     FisEQAudioProcessor& audioProcessor;
 
+    ViewMode viewMode = ViewMode::EQ;
+
+    // Analysis views
     SpectrumDisplay spectrumDisplay;
+    SpectrogramDisplay spectrogramDisplay;
     EQCurveEditor eqCurveEditor;
+
+    // View toggle button
+    juce::TextButton viewToggleButton;
 
     // Output gain knob
     GainKnob gainKnob;

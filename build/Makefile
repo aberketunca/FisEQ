@@ -1316,6 +1316,30 @@ Source/GUI/EQCurveEditor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/GUI/EQCurveEditor.cpp.s
 .PHONY : Source/GUI/EQCurveEditor.cpp.s
 
+Source/GUI/SpectrogramDisplay.o: Source/GUI/SpectrogramDisplay.cpp.o
+.PHONY : Source/GUI/SpectrogramDisplay.o
+
+# target to build an object file
+Source/GUI/SpectrogramDisplay.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/GUI/SpectrogramDisplay.cpp.o
+.PHONY : Source/GUI/SpectrogramDisplay.cpp.o
+
+Source/GUI/SpectrogramDisplay.i: Source/GUI/SpectrogramDisplay.cpp.i
+.PHONY : Source/GUI/SpectrogramDisplay.i
+
+# target to preprocess a source file
+Source/GUI/SpectrogramDisplay.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/GUI/SpectrogramDisplay.cpp.i
+.PHONY : Source/GUI/SpectrogramDisplay.cpp.i
+
+Source/GUI/SpectrogramDisplay.s: Source/GUI/SpectrogramDisplay.cpp.s
+.PHONY : Source/GUI/SpectrogramDisplay.s
+
+# target to generate assembly for a file
+Source/GUI/SpectrogramDisplay.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FisEQ.dir/build.make CMakeFiles/FisEQ.dir/Source/GUI/SpectrogramDisplay.cpp.s
+.PHONY : Source/GUI/SpectrogramDisplay.cpp.s
+
 Source/GUI/SpectrumDisplay.o: Source/GUI/SpectrumDisplay.cpp.o
 .PHONY : Source/GUI/SpectrumDisplay.o
 
@@ -1561,6 +1585,9 @@ help:
 	@echo "... Source/GUI/EQCurveEditor.o"
 	@echo "... Source/GUI/EQCurveEditor.i"
 	@echo "... Source/GUI/EQCurveEditor.s"
+	@echo "... Source/GUI/SpectrogramDisplay.o"
+	@echo "... Source/GUI/SpectrogramDisplay.i"
+	@echo "... Source/GUI/SpectrogramDisplay.s"
 	@echo "... Source/GUI/SpectrumDisplay.o"
 	@echo "... Source/GUI/SpectrumDisplay.i"
 	@echo "... Source/GUI/SpectrumDisplay.s"

@@ -6,9 +6,9 @@ FisEQ is a parametric equalizer plugin built with JUCE and cpp.
 
 ## features (yapicaz)
 
-- Parametric EQ
-- Real-time frequency response
-- Spectrum analyzer
+- Parametric EQ [X]
+- Real-time frequency response [X]
+- Spectrum analyzer [X]
 - Mid/Side processing
 - Oversampling
 - VST3 support
