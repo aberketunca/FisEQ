@@ -7,6 +7,19 @@ FisEQAudioProcessor::FisEQAudioProcessor()
         .withOutput("Output", juce::AudioChannelSet::stereo(), true)),
       parameters(*this, nullptr, "PARAMETERS", createParameterLayout())
 {
+    cacheParameterPointers();
+}
+
+void FisEQAudioProcessor::cacheParameterPointers()
+{
+    for (int i = 0; i < numBands; ++i)
+    {
+        auto prefix = "band" + juce::String(i + 1) + "_";
+        bandParams[static_cast<size_t>(i)].freq = parameters.getRawParameterValue(prefix + "freq");
+        bandParams[static_cast<size_t>(i)].gain = parameters.getRawParameterValue(prefix + "gain");
+        bandParams[static_cast<size_t>(i)].q    = parameters.getRawParameterValue(prefix + "q");
+    }
+    outputGainParam = parameters.getRawParameterValue("output_gain");
 }
 
 juce::AudioProcessorValueTreeState::ParameterLayout
