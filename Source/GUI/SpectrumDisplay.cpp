@@ -1,4 +1,5 @@
 #include "SpectrumDisplay.h"
+#include "Theme.h"
 #include <cmath>
 
 SpectrumDisplay::SpectrumDisplay()

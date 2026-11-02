@@ -89,14 +89,13 @@ void FisEQAudioProcessorEditor::paint(juce::Graphics& g)
     float w = static_cast<float>(bounds.getWidth());
     float h = static_cast<float>(bounds.getHeight());
 
-    // === Rich dark background with subtle radial vignette ===
-    g.fillAll(juce::Colour(0xff080c14));
+    // === Warm vintage background with radial vignette ===
+    g.fillAll(Theme::col(Theme::bgBase));
 
-    // Subtle radial gradient emanating from center — gives depth
     {
         juce::ColourGradient vignette(
-            juce::Colour(0xff101828), w * 0.5f, h * 0.45f,
-            juce::Colour(0xff050810), 0.0f, h,
+            Theme::col(Theme::bgRaised), w * 0.5f, h * 0.42f,
+            Theme::col(Theme::bgDeep), 0.0f, h,
             true); // radial
         g.setGradientFill(vignette);
         g.fillRect(bounds);
@@ -105,18 +104,17 @@ void FisEQAudioProcessorEditor::paint(juce::Graphics& g)
     // === Top bar ===
     auto topBar = bounds.removeFromTop(48);
 
-    // Top bar gradient
     {
         juce::ColourGradient topGrad(
-            juce::Colour(0xff0f1629), 0.0f, static_cast<float>(topBar.getY()),
-            juce::Colour(0xff080c14), 0.0f, static_cast<float>(topBar.getBottom()),
+            Theme::col(Theme::bgRaised), 0.0f, static_cast<float>(topBar.getY()),
+            Theme::col(Theme::bgBase), 0.0f, static_cast<float>(topBar.getBottom()),
             false);
         g.setGradientFill(topGrad);
         g.fillRect(topBar);
     }
 
     // Separator line under top bar
-    g.setColour(juce::Colour(0xff1e293b));
+    g.setColour(Theme::col(Theme::line));
     g.drawHorizontalLine(topBar.getBottom() - 1, 0.0f, w);
 
     // Logo
@@ -127,17 +125,17 @@ void FisEQAudioProcessorEditor::paint(juce::Graphics& g)
     juce::Font logoFont(juce::FontOptions(typeface).withHeight(30.0f));
     g.setFont(logoFont);
 
-    // Logo with subtle glow effect
-    g.setColour(juce::Colour(0xff06b6d4).withAlpha(0.3f));
+    // Logo with a warm amber glow
+    g.setColour(Theme::col(Theme::accent).withAlpha(0.35f));
     g.drawText("FisEQ", topBar.reduced(18, 0).translated(1, 1),
                juce::Justification::centredLeft);
-    g.setColour(juce::Colour(0xff22d3ee));
+    g.setColour(Theme::col(Theme::accentBright));
     g.drawText("FisEQ", topBar.reduced(18, 0),
                juce::Justification::centredLeft);
 
     // Subtitle — placed just right of the logo, away from the controls
     g.setFont(11.0f);
-    g.setColour(juce::Colour(0xff64748b));
+    g.setColour(Theme::col(Theme::textDim));
     auto subtitleArea = topBar.withTrimmedLeft(120).withTrimmedRight(230);
     g.drawText(viewMode == ViewMode::EQ ? "5-BAND PARAMETRIC EQ" : "SPECTROGRAM ANALYSER",
                subtitleArea, juce::Justification::centredLeft);
@@ -147,7 +145,7 @@ void FisEQAudioProcessorEditor::paint(juce::Graphics& g)
     drawFrequencyLabels(g, bottomBar);
 
     // Bottom separator
-    g.setColour(juce::Colour(0xff1e293b));
+    g.setColour(Theme::col(Theme::line));
     g.drawHorizontalLine(bottomBar.getY(), 0.0f, w);
 
     // === Left area for dB labels (EQ mode only) ===
@@ -156,16 +154,15 @@ void FisEQAudioProcessorEditor::paint(juce::Graphics& g)
         drawDBLabels(g, leftBar);
 
     // Left separator
-    g.setColour(juce::Colour(0xff1e293b));
+    g.setColour(Theme::col(Theme::line));
     g.drawVerticalLine(leftBar.getRight(), static_cast<float>(leftBar.getY()),
                        static_cast<float>(leftBar.getBottom()));
 
     // === Graph area subtle inner shadow ===
     auto graphArea = bounds.reduced(1);
     {
-        // Top inner shadow
         juce::ColourGradient topShadow(
-            juce::Colour(0x15000000), 0.0f, static_cast<float>(graphArea.getY()),
+            juce::Colour(0x22000000), 0.0f, static_cast<float>(graphArea.getY()),
             juce::Colours::transparentBlack, 0.0f, static_cast<float>(graphArea.getY() + 20),
             false);
         g.setGradientFill(topShadow);
@@ -199,7 +196,7 @@ void FisEQAudioProcessorEditor::resized()
 
 void FisEQAudioProcessorEditor::drawFrequencyLabels(juce::Graphics& g, juce::Rectangle<int> area)
 {
-    g.setFont(9.5f);
+    g.setFont(11.0f);
 
     const float freqs[] = { 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000 };
     const char* labels[] = { "20", "50", "100", "200", "500", "1k", "2k", "5k", "10k", "20k" };
@@ -212,9 +209,9 @@ void FisEQAudioProcessorEditor::drawFrequencyLabels(juce::Graphics& g, juce::Rec
         float normX = std::log10(freqs[i] / 20.0f) / std::log10(20000.0f / 20.0f);
         float x = graphLeft + normX * graphWidth;
 
-        // Emphasize decade markers
+        // Emphasize decade markers (brighter cream vs tobacco)
         bool isMajor = (i == 2 || i == 5 || i == 8); // 100, 1k, 10k
-        g.setColour(juce::Colour(isMajor ? 0xff94a3b8 : 0xff475569));
+        g.setColour(Theme::col(isMajor ? Theme::textMid : Theme::textDim));
 
         g.drawText(labels[i],
                    static_cast<int>(x - 16), area.getY() + 4,
@@ -225,7 +222,7 @@ void FisEQAudioProcessorEditor::drawFrequencyLabels(juce::Graphics& g, juce::Rec
 
 void FisEQAudioProcessorEditor::drawDBLabels(juce::Graphics& g, juce::Rectangle<int> area)
 {
-    g.setFont(9.0f);
+    g.setFont(11.0f);
 
     float h = static_cast<float>(area.getHeight());
 
@@ -237,7 +234,7 @@ void FisEQAudioProcessorEditor::drawDBLabels(juce::Graphics& g, juce::Rectangle<
         int y = area.getY() + static_cast<int>(normY * h);
 
         bool isZero = (static_cast<int>(db) == 0);
-        g.setColour(juce::Colour(isZero ? 0xff94a3b8 : 0xff475569));
+        g.setColour(Theme::col(isZero ? Theme::textMid : Theme::textDim));
 
         juce::String label;
         if (db > 0)
@@ -248,8 +245,8 @@ void FisEQAudioProcessorEditor::drawDBLabels(juce::Graphics& g, juce::Rectangle<
             label = juce::String(static_cast<int>(db));
 
         g.drawText(label,
-                   area.getX() + 2, y - 6,
-                   area.getWidth() - 4, 12,
+                   area.getX() + 2, y - 7,
+                   area.getWidth() - 4, 14,
                    juce::Justification::centredRight);
     }
 }

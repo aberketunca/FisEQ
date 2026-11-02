@@ -3,6 +3,7 @@
 #include <juce_gui_basics/juce_gui_basics.h>
 #include <juce_audio_processors/juce_audio_processors.h>
 #include "../PluginProcessor.h"
+#include "Theme.h"
 #include <array>
 
 /**
@@ -66,13 +67,8 @@ private:
     static constexpr float minDB = -24.0f;
     static constexpr float maxDB = 24.0f;
 
-    static constexpr std::array<juce::uint32, 5> bandColours = {
-        0xfff472b6,  // pink
-        0xfffbbf24,  // amber
-        0xff34d399,  // emerald
-        0xff60a5fa,  // blue
-        0xffc084fc   // purple
-    };
+    // Band colours come from the shared vintage theme palette.
+    static constexpr std::array<juce::uint32, 5> bandColours = Theme::bands;
 
     int findBandAt(juce::Point<float> pos) const;
     void drawPerBandCurve(juce::Graphics& g, int bandIndex, float w, float h);

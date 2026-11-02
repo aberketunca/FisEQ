@@ -1,4 +1,5 @@
 #include "EQCurveEditor.h"
+#include "Theme.h"
 #include <cmath>
 
 EQCurveEditor::EQCurveEditor(FisEQAudioProcessor& p)
@@ -168,23 +169,23 @@ void EQCurveEditor::drawTooltip(juce::Graphics& g)
     auto boxRect = juce::Rectangle<float>(tx, ty, boxW, boxH);
 
     // Background
-    g.setColour(juce::Colour(0xee0f172a));
+    g.setColour(Theme::col(Theme::bgPanel).withAlpha(0.95f));
     g.fillRoundedRectangle(boxRect, 4.0f);
 
     // Border
     auto colour = juce::Colour(bandColours[static_cast<size_t>(tooltipBand)]);
-    g.setColour(colour.withAlpha(0.6f));
+    g.setColour(colour.withAlpha(0.7f));
     g.drawRoundedRectangle(boxRect, 4.0f, 1.0f);
 
     // Text
     g.setFont(11.0f);
-    g.setColour(juce::Colour(0xffe2e8f0));
+    g.setColour(Theme::col(Theme::textBright));
     g.drawText(freqStr, boxRect.reduced(6, 4).removeFromTop(14), juce::Justification::centredLeft);
 
-    g.setColour(juce::Colour(0xffa5f3fc));
+    g.setColour(Theme::col(Theme::accentBright));
     auto midLine = boxRect.reduced(6, 0).withTrimmedTop(16).removeFromTop(14);
     g.drawText(gainStr, midLine.removeFromLeft(midLine.getWidth() * 0.55f), juce::Justification::centredLeft);
-    g.setColour(juce::Colour(0xff94a3b8));
+    g.setColour(Theme::col(Theme::textMid));
     g.drawText(qStr, midLine, juce::Justification::centredRight);
 }
 
@@ -200,12 +201,12 @@ void EQCurveEditor::paint(juce::Graphics& g)
     // === Grid ===
     float centerY = h * 0.5f;
 
-    // 0 dB center line
-    g.setColour(juce::Colours::white.withAlpha(0.08f));
+    // 0 dB center line (warm, clearly the key reference)
+    g.setColour(Theme::col(Theme::lineStrong).withAlpha(0.7f));
     g.drawHorizontalLine(static_cast<int>(centerY), 0.0f, w);
 
     // +/-6, 12, 18 dB lines
-    g.setColour(juce::Colours::white.withAlpha(0.035f));
+    g.setColour(Theme::col(Theme::lineSoft).withAlpha(0.8f));
     for (float db : { -18.0f, -12.0f, -6.0f, 6.0f, 12.0f, 18.0f })
     {
         float y = dbToY(db);
@@ -248,17 +249,17 @@ void EQCurveEditor::paint(juce::Graphics& g)
     fillPath.lineTo(0.0f, centerY);
     fillPath.closeSubPath();
 
-    g.setColour(juce::Colours::white.withAlpha(0.03f));
+    g.setColour(Theme::col(Theme::curve).withAlpha(0.04f));
     g.fillPath(fillPath);
 
-    // 3-pass glow stroke
-    g.setColour(juce::Colours::white.withAlpha(0.1f));
+    // 3-pass glow stroke (warm cream)
+    g.setColour(Theme::col(Theme::accent).withAlpha(0.18f));
     g.strokePath(curvePath, juce::PathStrokeType(4.5f));
 
-    g.setColour(juce::Colours::white.withAlpha(0.3f));
+    g.setColour(Theme::col(Theme::curve).withAlpha(0.4f));
     g.strokePath(curvePath, juce::PathStrokeType(2.0f));
 
-    g.setColour(juce::Colours::white.withAlpha(0.9f));
+    g.setColour(Theme::col(Theme::curve).withAlpha(0.95f));
     g.strokePath(curvePath, juce::PathStrokeType(1.0f));
 
     // === Band nodes ===
@@ -302,13 +303,13 @@ void EQCurveEditor::paint(juce::Graphics& g)
         }
 
         // Ring
-        g.setColour(juce::Colours::white.withAlpha(isActive ? 0.7f : 0.3f));
+        g.setColour(Theme::col(Theme::textBright).withAlpha(isActive ? 0.8f : 0.35f));
         g.drawEllipse(node.position.x - r, node.position.y - r,
                       r * 2.0f, r * 2.0f,
                       isActive ? 1.6f : 0.9f);
 
         // Specular highlight
-        g.setColour(juce::Colours::white.withAlpha(0.5f));
+        g.setColour(Theme::col(Theme::textBright).withAlpha(0.55f));
         float dotR = r * 0.22f;
         g.fillEllipse(node.position.x - dotR - r * 0.2f,
                       node.position.y - dotR - r * 0.25f,
