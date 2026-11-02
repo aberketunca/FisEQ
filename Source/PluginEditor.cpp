@@ -117,19 +117,11 @@ void FisEQAudioProcessorEditor::paint(juce::Graphics& g)
     g.setColour(Theme::col(Theme::line));
     g.drawHorizontalLine(topBar.getBottom() - 1, 0.0f, w);
 
-    // Logo
-    auto typeface = juce::Typeface::createSystemTypefaceFor(
-        BinaryData::MAROLA___TTF,
-        BinaryData::MAROLA___TTFSize);
-
-    juce::Font logoFont(juce::FontOptions(typeface).withHeight(30.0f));
+    // Logo — neutral sans, letter-spaced, calm
+    juce::Font logoFont(juce::FontOptions(20.0f, juce::Font::plain));
+    logoFont.setExtraKerningFactor(0.08f);
     g.setFont(logoFont);
-
-    // Logo with a warm amber glow
-    g.setColour(Theme::col(Theme::accent).withAlpha(0.35f));
-    g.drawText("FisEQ", topBar.reduced(18, 0).translated(1, 1),
-               juce::Justification::centredLeft);
-    g.setColour(Theme::col(Theme::accentBright));
+    g.setColour(Theme::col(Theme::textBright));
     g.drawText("FisEQ", topBar.reduced(18, 0),
                juce::Justification::centredLeft);
 

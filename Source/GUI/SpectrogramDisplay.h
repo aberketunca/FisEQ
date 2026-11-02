@@ -44,9 +44,6 @@ private:
     static constexpr int lutSize = 256;
     std::array<juce::Colour, lutSize> colourLUT;
 
-    // Film-grain seed state
-    juce::Random grainRandom;
-
     static constexpr float minFreq = 20.0f;
     static constexpr float maxFreq = 20000.0f;
 

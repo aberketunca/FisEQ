@@ -108,11 +108,9 @@ void SpectrumDisplay::paint(juce::Graphics& g)
     // === Scientific grid ===
 
     // Frequency grid: octave markers + sub-octave
-    // Major grid: decades (100, 1k, 10k)
-    // Minor grid: 20, 30, 40, 50, 60, 70, 80, 90, 200, 300, ... etc.
     {
         // Sub-octave lines (very faint)
-        g.setColour(juce::Colour(0xff1e293b).withAlpha(0.4f));
+        g.setColour(Theme::col(Theme::lineSoft).withAlpha(0.5f));
         const float subFreqs[] = {
             30, 40, 50, 60, 70, 80, 90,
             200, 300, 400, 500, 600, 700, 800, 900,
@@ -125,7 +123,7 @@ void SpectrumDisplay::paint(juce::Graphics& g)
         }
 
         // Decade lines (brighter)
-        g.setColour(juce::Colour(0xff334155).withAlpha(0.7f));
+        g.setColour(Theme::col(Theme::line).withAlpha(0.8f));
         const float decadeFreqs[] = { 100, 1000, 10000 };
         for (float freq : decadeFreqs)
         {
@@ -137,7 +135,7 @@ void SpectrumDisplay::paint(juce::Graphics& g)
     // dBFS horizontal grid
     {
         // Every 10 dB (major)
-        g.setColour(juce::Colour(0xff334155).withAlpha(0.5f));
+        g.setColour(Theme::col(Theme::line).withAlpha(0.6f));
         for (float db = -80.0f; db <= -10.0f; db += 10.0f)
         {
             float y = dbToY(db, h);
@@ -145,7 +143,7 @@ void SpectrumDisplay::paint(juce::Graphics& g)
         }
 
         // Every 30 dB (emphasized)
-        g.setColour(juce::Colour(0xff475569).withAlpha(0.5f));
+        g.setColour(Theme::col(Theme::lineStrong).withAlpha(0.5f));
         for (float db : { -30.0f, -60.0f })
         {
             float y = dbToY(db, h);
@@ -183,7 +181,7 @@ void SpectrumDisplay::paint(juce::Graphics& g)
         }
 
         // Subtle peak line
-        g.setColour(juce::Colour(0xff64748b).withAlpha(0.3f));
+        g.setColour(Theme::col(Theme::textDim).withAlpha(0.4f));
         g.strokePath(peakPath, juce::PathStrokeType(0.75f));
     }
 
@@ -192,13 +190,13 @@ void SpectrumDisplay::paint(juce::Graphics& g)
         juce::Path fillPath;
         buildAnalyzerPath(fillPath, w, h, displayMagnitudes);
 
-        // Gradient: cold blue tint, very transparent — scientific look
+        // Gradient: warm amber tint, very transparent — aged-instrument look
         juce::ColourGradient fillGrad(
-            juce::Colour(0xff0ea5e9).withAlpha(0.15f), 0.0f, 0.0f,
-            juce::Colour(0xff0f172a).withAlpha(0.02f), 0.0f, h,
+            Theme::col(Theme::accentBright).withAlpha(0.16f), 0.0f, 0.0f,
+            Theme::col(Theme::bgBase).withAlpha(0.02f), 0.0f, h,
             false);
-        fillGrad.addColour(0.3, juce::Colour(0xff06b6d4).withAlpha(0.12f));
-        fillGrad.addColour(0.7, juce::Colour(0xff1e293b).withAlpha(0.05f));
+        fillGrad.addColour(0.3, Theme::col(Theme::accent).withAlpha(0.13f));
+        fillGrad.addColour(0.7, Theme::col(Theme::accentDeep).withAlpha(0.06f));
 
         g.setGradientFill(fillGrad);
         g.fillPath(fillPath);
@@ -235,11 +233,11 @@ void SpectrumDisplay::paint(juce::Graphics& g)
 
         // Single clean stroke — no glow, just a precise line
         // Subtle outer for antialiasing
-        g.setColour(juce::Colour(0xff22d3ee).withAlpha(0.2f));
+        g.setColour(Theme::col(Theme::accent).withAlpha(0.25f));
         g.strokePath(linePath, juce::PathStrokeType(2.5f));
 
-        // Core line — bright and precise
-        g.setColour(juce::Colour(0xff67e8f9).withAlpha(0.75f));
+        // Core line — warm amber, bright and precise
+        g.setColour(Theme::col(Theme::spectrumLine).withAlpha(0.85f));
         g.strokePath(linePath, juce::PathStrokeType(1.0f));
     }
 }

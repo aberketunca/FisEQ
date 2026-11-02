@@ -43,6 +43,8 @@ target_sources(FisEQ PRIVATE
     Source/DSP/SpectrumAnalyzer.cpp
     Source/DSP/SpectrumAnalyzer.h
 
+    Source/GUI/Theme.h
+
     Source/GUI/SpectrumDisplay.cpp
     Source/GUI/SpectrumDisplay.h
     Source/GUI/SpectrogramDisplay.cpp

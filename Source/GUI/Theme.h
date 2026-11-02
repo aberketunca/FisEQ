@@ -40,13 +40,13 @@ namespace Theme
     inline constexpr juce::uint32 spectrumLine = 0xffe8a24a;  // analyser line (amber)
     inline constexpr juce::uint32 spectrumFill = 0xffb85a28;  // analyser fill base
 
-    // ---- Band colours: distinct, but all within the warm film family ----
+    // ---- EQ band nodes: all a single dusty plum (identity by position) ----
+    inline constexpr juce::uint32 nodePlum       = 0xff9d5a86;  // dusty plum disc
+    inline constexpr juce::uint32 nodePlumBright  = 0xffc78fb0;  // lit plum (active ring)
+
+    // All five bands share the plum (kept as an array so call sites don't change).
     inline constexpr std::array<juce::uint32, 5> bands = {
-        0xffd94f3d,  // 1 — rust red
-        0xffe8902a,  // 2 — amber / ochre
-        0xffd4b84a,  // 3 — mustard gold
-        0xff7fa87a,  // 4 — faded sage (cool relief, still muted/vintage)
-        0xffb06a9c   // 5 — dusty plum/mauve
+        nodePlum, nodePlum, nodePlum, nodePlum, nodePlum
     };
 
     // Convenience accessors

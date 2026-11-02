@@ -1,10 +1,11 @@
 #pragma once
 
 #include <juce_gui_basics/juce_gui_basics.h>
+#include "Theme.h"
 
 /**
- * Custom-drawn gain knob with a modern look.
- * Arc-style indicator with glow, value label, and title.
+ * Custom-drawn gain knob with a vintage look.
+ * Arc-style indicator with warm glow, value label, and title.
  */
 class GainKnobLookAndFeel : public juce::LookAndFeel_V4
 {
@@ -26,11 +27,11 @@ public:
         juce::Path bgArc;
         bgArc.addCentredArc(centreX, centreY, radius - 4.0f, radius - 4.0f,
                             0.0f, rotaryStartAngle, rotaryEndAngle, true);
-        g.setColour(juce::Colour(0xff1e293b));
+        g.setColour(Theme::col(Theme::line));
         g.strokePath(bgArc, juce::PathStrokeType(3.5f, juce::PathStrokeType::curved,
                                                   juce::PathStrokeType::rounded));
 
-        // === Active arc (cyan glow) ===
+        // === Active arc (warm amber glow) ===
         if (std::abs(sliderPosProportional - 0.5f) > 0.01f)
         {
             float startArc = rotaryStartAngle + 0.5f * (rotaryEndAngle - rotaryStartAngle);
@@ -40,12 +41,12 @@ public:
             juce::Path glowArc;
             glowArc.addCentredArc(centreX, centreY, radius - 4.0f, radius - 4.0f,
                                   0.0f, startArc, endArc, true);
-            g.setColour(juce::Colour(0xff06b6d4).withAlpha(0.25f));
+            g.setColour(Theme::col(Theme::accent).withAlpha(0.28f));
             g.strokePath(glowArc, juce::PathStrokeType(7.0f, juce::PathStrokeType::curved,
                                                         juce::PathStrokeType::rounded));
 
             // Core arc
-            g.setColour(juce::Colour(0xff22d3ee));
+            g.setColour(Theme::col(Theme::accentBright));
             g.strokePath(glowArc, juce::PathStrokeType(3.0f, juce::PathStrokeType::curved,
                                                         juce::PathStrokeType::rounded));
         }
@@ -56,21 +57,21 @@ public:
         float pointerY = centreY + pointerLength * std::sin(angle - juce::MathConstants<float>::halfPi);
 
         // Pointer dot with glow
-        g.setColour(juce::Colour(0xff22d3ee).withAlpha(0.4f));
+        g.setColour(Theme::col(Theme::accent).withAlpha(0.4f));
         g.fillEllipse(pointerX - 4.5f, pointerY - 4.5f, 9.0f, 9.0f);
-        g.setColour(juce::Colour(0xffa5f3fc));
+        g.setColour(Theme::col(Theme::accentBright));
         g.fillEllipse(pointerX - 2.5f, pointerY - 2.5f, 5.0f, 5.0f);
 
         // === Center circle ===
         float innerR = radius * 0.38f;
         juce::ColourGradient centerGrad(
-            juce::Colour(0xff1e293b), centreX, centreY - innerR,
-            juce::Colour(0xff0f172a), centreX, centreY + innerR,
+            Theme::col(Theme::bgRaised), centreX, centreY - innerR,
+            Theme::col(Theme::bgDeep), centreX, centreY + innerR,
             false);
         g.setGradientFill(centerGrad);
         g.fillEllipse(centreX - innerR, centreY - innerR, innerR * 2.0f, innerR * 2.0f);
 
-        g.setColour(juce::Colour(0xff334155));
+        g.setColour(Theme::col(Theme::line));
         g.drawEllipse(centreX - innerR, centreY - innerR, innerR * 2.0f, innerR * 2.0f, 0.8f);
 
         // === Value text inside knob ===
@@ -83,7 +84,7 @@ public:
         else
             valText = "0.0";
 
-        g.setColour(juce::Colour(0xffe2e8f0));
+        g.setColour(Theme::col(Theme::textBright));
         g.setFont(10.0f);
         g.drawText(valText,
                    static_cast<int>(centreX - 18), static_cast<int>(centreY - 6), 36, 12,
@@ -113,8 +114,8 @@ public:
     void paint(juce::Graphics& g) override
     {
         // Label below knob
-        g.setFont(9.0f);
-        g.setColour(juce::Colour(0xff64748b));
+        g.setFont(10.0f);
+        g.setColour(Theme::col(Theme::textMid));
         g.drawText("GAIN", getLocalBounds().removeFromBottom(14),
                    juce::Justification::centred);
     }

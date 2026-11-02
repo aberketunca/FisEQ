@@ -46,10 +46,10 @@ private:
 
     double sampleRate = 44100.0;
 
-    // Smoothing
-    static constexpr float decayRate = 0.84f;
-    static constexpr float riseRate  = 0.92f;
-    static constexpr float peakDecay = 0.995f;
+    // Smoothing — higher decay = calmer, settles rather than jitters
+    static constexpr float decayRate = 0.92f;
+    static constexpr float riseRate  = 0.78f;
+    static constexpr float peakDecay = 0.997f;
 
     // dB range for display
     static constexpr float maxDBFS = 0.0f;

@@ -262,58 +262,27 @@ void EQCurveEditor::paint(juce::Graphics& g)
     g.setColour(Theme::col(Theme::curve).withAlpha(0.95f));
     g.strokePath(curvePath, juce::PathStrokeType(1.0f));
 
-    // === Band nodes ===
+    // === Band nodes — single clean plum discs ===
     for (int i = 0; i < FisEQAudioProcessor::numBands; ++i)
     {
         auto& node = nodes[static_cast<size_t>(i)];
         bool isActive = (i == hoveredBand || i == draggedBand);
-        float r = isActive ? nodeRadius * 1.4f : nodeRadius;
+        float r = isActive ? nodeRadius * 1.25f : nodeRadius;
 
         // Connection line to 0 dB
-        g.setColour(node.colour.withAlpha(isActive ? 0.3f : 0.1f));
+        g.setColour(Theme::col(Theme::nodePlum).withAlpha(isActive ? 0.28f : 0.1f));
         g.drawLine(node.position.x, node.position.y,
                    node.position.x, centerY, 1.0f);
 
-        // Radial glow
-        {
-            float glowR = r * 2.8f;
-            juce::ColourGradient glow(
-                node.colour.withAlpha(isActive ? 0.3f : 0.12f),
-                node.position.x, node.position.y,
-                node.colour.withAlpha(0.0f),
-                node.position.x + glowR, node.position.y,
-                true);
-            g.setGradientFill(glow);
-            g.fillEllipse(node.position.x - glowR,
-                          node.position.y - glowR,
-                          glowR * 2.0f, glowR * 2.0f);
-        }
+        // One flat filled disc
+        g.setColour(Theme::col(Theme::nodePlum));
+        g.fillEllipse(node.position.x - r, node.position.y - r, r * 2.0f, r * 2.0f);
 
-        // Main circle
-        {
-            float d = r * 2.0f;
-            juce::ColourGradient nodeFill(
-                node.colour.brighter(0.3f),
-                node.position.x, node.position.y - r,
-                node.colour.darker(0.2f),
-                node.position.x, node.position.y + r,
-                false);
-            g.setGradientFill(nodeFill);
-            g.fillEllipse(node.position.x - r, node.position.y - r, d, d);
-        }
-
-        // Ring
-        g.setColour(Theme::col(Theme::textBright).withAlpha(isActive ? 0.8f : 0.35f));
+        // Thin ring for definition; brighter when active
+        g.setColour(Theme::col(isActive ? Theme::nodePlumBright : Theme::nodePlum)
+                        .withAlpha(isActive ? 0.95f : 0.5f));
         g.drawEllipse(node.position.x - r, node.position.y - r,
-                      r * 2.0f, r * 2.0f,
-                      isActive ? 1.6f : 0.9f);
-
-        // Specular highlight
-        g.setColour(Theme::col(Theme::textBright).withAlpha(0.55f));
-        float dotR = r * 0.22f;
-        g.fillEllipse(node.position.x - dotR - r * 0.2f,
-                      node.position.y - dotR - r * 0.25f,
-                      dotR * 2.0f, dotR * 2.0f);
+                      r * 2.0f, r * 2.0f, isActive ? 1.5f : 1.0f);
     }
 
     // === Tooltip (drawn last, on top) ===

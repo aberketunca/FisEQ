@@ -1561,4 +1561,5 @@ CMakeFiles/FisEQ.dir/Source/PluginProcessor.cpp.o: \
   /Users/berke/Desktop/FisEQ/Source/GUI/SpectrogramDisplay.h \
   /Users/berke/Desktop/FisEQ/Source/GUI/EQCurveEditor.h \
   /Users/berke/Desktop/FisEQ/Source/GUI/../PluginProcessor.h \
+  /Users/berke/Desktop/FisEQ/Source/GUI/Theme.h \
   /Users/berke/Desktop/FisEQ/Source/GUI/GainKnob.h

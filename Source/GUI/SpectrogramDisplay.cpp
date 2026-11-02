@@ -1,4 +1,5 @@
 #include "SpectrogramDisplay.h"
+#include "Theme.h"
 #include <cmath>
 
 SpectrogramDisplay::SpectrogramDisplay()
@@ -139,10 +140,6 @@ void SpectrogramDisplay::pushColumn(const std::array<float, SpectrumAnalyzer::nu
 
         // Perceptual lift so quiet detail is visible (film-like response).
         mag = std::pow(juce::jlimit(0.0f, 1.0f, mag), 0.55f);
-
-        // Film grain: subtle additive noise so flat areas aren't clinical.
-        float grain = (grainRandom.nextFloat() - 0.5f) * 0.06f;
-        mag = juce::jlimit(0.0f, 1.0f, mag + grain);
 
         auto c = mapColour(mag);
         data.setPixelColour(lastX, y, c);

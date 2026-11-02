@@ -1475,4 +1475,5 @@ CMakeFiles/FisEQ.dir/Source/GUI/SpectrogramDisplay.cpp.o: \
   /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_NoiseGate.h \
   /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_Limiter.h \
   /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_Phaser.h \
-  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_Chorus.h
+  /Users/berke/Desktop/FisEQ/JUCE/modules/juce_dsp/widgets/juce_Chorus.h \
+  /Users/berke/Desktop/FisEQ/Source/GUI/Theme.h
