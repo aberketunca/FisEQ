@@ -55,6 +55,15 @@ private:
     std::array<EQBand, numBands> bands;
     SpectrumAnalyzer analyzer;
 
+    // Cached parameter pointers (resolved once — no lookups/allocations on the audio thread)
+    struct BandParams { std::atomic<float>* freq = nullptr;
+                        std::atomic<float>* gain = nullptr;
+                        std::atomic<float>* q    = nullptr; };
+    std::array<BandParams, numBands> bandParams;
+    std::atomic<float>* outputGainParam = nullptr;
+
+    void cacheParameterPointers();
+
     // Band filter types (fixed topology)
     static constexpr std::array<FilterType, numBands> bandTypes = {
         FilterType::LowShelf,
