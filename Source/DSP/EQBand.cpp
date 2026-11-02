@@ -45,10 +45,7 @@ void EQBand::update(float frequency,
     }
 
     if (newCoeffs != nullptr)
-    {
         *filter.state = *newCoeffs;
-        currentCoefficients = newCoeffs;
-    }
 }
 
 void EQBand::process(juce::AudioBuffer<float>& buffer)
@@ -61,10 +58,34 @@ void EQBand::process(juce::AudioBuffer<float>& buffer)
     filter.process(context);
 }
 
-double EQBand::getMagnitudeAtFrequency(double frequency) const
+double EQBand::magnitudeForParams(FilterType type,
+                                  double sampleRate,
+                                  float frequency,
+                                  float gainDB,
+                                  float q,
+                                  double atFrequency)
 {
-    if (bypassed || currentCoefficients == nullptr)
+    if (sampleRate <= 0.0)
         return 1.0;
 
-    return currentCoefficients->getMagnitudeForFrequency(frequency, currentSampleRate);
+    float gain = juce::Decibels::decibelsToGain(gainDB);
+
+    juce::dsp::IIR::Coefficients<float>::Ptr coeffs;
+    switch (type)
+    {
+        case FilterType::LowShelf:
+            coeffs = juce::dsp::IIR::Coefficients<float>::makeLowShelf(sampleRate, frequency, q, gain);
+            break;
+        case FilterType::Peak:
+            coeffs = juce::dsp::IIR::Coefficients<float>::makePeakFilter(sampleRate, frequency, q, gain);
+            break;
+        case FilterType::HighShelf:
+            coeffs = juce::dsp::IIR::Coefficients<float>::makeHighShelf(sampleRate, frequency, q, gain);
+            break;
+    }
+
+    if (coeffs == nullptr)
+        return 1.0;
+
+    return coeffs->getMagnitudeForFrequency(atFrequency, sampleRate);
 }

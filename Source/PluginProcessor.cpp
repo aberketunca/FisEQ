@@ -97,23 +97,24 @@ void FisEQAudioProcessor::processBlock(juce::AudioBuffer<float>& buffer,
     juce::ignoreUnused(midiMessages);
     juce::ScopedNoDenormals noDenormals;
 
-    // Update and process each band
+    // Update and process each band (cached pointers — no allocation on audio thread)
     for (int i = 0; i < numBands; ++i)
     {
-        auto prefix = "band" + juce::String(i + 1) + "_";
+        const auto& bp = bandParams[static_cast<size_t>(i)];
+        if (bp.freq == nullptr || bp.gain == nullptr || bp.q == nullptr)
+            continue;
 
-        float freq = parameters.getRawParameterValue(prefix + "freq")->load();
-        float gain = parameters.getRawParameterValue(prefix + "gain")->load();
-        float q    = parameters.getRawParameterValue(prefix + "q")->load();
+        float freq = bp.freq->load();
+        float gain = bp.gain->load();
+        float q    = bp.q->load();
 
         bands[static_cast<size_t>(i)].update(freq, gain, q, bandTypes[static_cast<size_t>(i)]);
         bands[static_cast<size_t>(i)].process(buffer);
     }
 
     // Apply output gain
-    float outputGainDB = parameters.getRawParameterValue("output_gain")->load();
-    float outputGain = juce::Decibels::decibelsToGain(outputGainDB);
-    buffer.applyGain(outputGain);
+    if (outputGainParam != nullptr)
+        buffer.applyGain(juce::Decibels::decibelsToGain(outputGainParam->load()));
 
     // Push post-EQ audio to spectrum analyzer (mono mix for display)
     const int numSamples = buffer.getNumSamples();
@@ -148,9 +149,27 @@ void FisEQAudioProcessor::processBlock(juce::AudioBuffer<float>& buffer,
 double FisEQAudioProcessor::getCompositeMagnitude(double frequency) const
 {
     double magnitude = 1.0;
-    for (const auto& band : bands)
-        magnitude *= band.getMagnitudeAtFrequency(frequency);
+    for (int i = 0; i < numBands; ++i)
+        magnitude *= getBandMagnitude(i, frequency);
     return magnitude;
+}
+
+double FisEQAudioProcessor::getBandMagnitude(int bandIndex, double frequency) const
+{
+    if (bandIndex < 0 || bandIndex >= numBands)
+        return 1.0;
+
+    const auto& bp = bandParams[static_cast<size_t>(bandIndex)];
+    if (bp.freq == nullptr || bp.gain == nullptr || bp.q == nullptr)
+        return 1.0;
+
+    return EQBand::magnitudeForParams(
+        bandTypes[static_cast<size_t>(bandIndex)],
+        getSampleRate(),
+        bp.freq->load(),
+        bp.gain->load(),
+        bp.q->load(),
+        frequency);
 }
 
 juce::AudioProcessorEditor* FisEQAudioProcessor::createEditor()

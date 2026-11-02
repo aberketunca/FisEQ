@@ -46,7 +46,9 @@ public:
 
     // Public access for GUI
     SpectrumAnalyzer& getAnalyzer() { return analyzer; }
-    EQBand& getBand(int index) { return bands[static_cast<size_t>(index)]; }
+
+    /** Thread-safe single-band magnitude (computed from parameters). */
+    double getBandMagnitude(int bandIndex, double frequency) const;
 
     /** Compute the composite magnitude response of all bands at a given frequency. */
     double getCompositeMagnitude(double frequency) const;

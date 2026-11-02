@@ -108,7 +108,11 @@ void SpectrogramDisplay::pushColumn(const std::array<float, SpectrumAnalyzer::nu
 
     const int w = spectrogramImage.getWidth();
     const int h = spectrogramImage.getHeight();
-    if (w < 2 || h < 1)
+    if (w < 2 || h < 2)   // need h >= 2 so (h - 1) divisor is safe
+        return;
+
+    const float binWidth = static_cast<float>(sampleRate) / static_cast<float>(SpectrumAnalyzer::fftSize);
+    if (!(binWidth > 0.0f))   // guards sampleRate == 0 before the device is open
         return;
 
     // Scroll the existing image left by 1px.
@@ -120,7 +124,6 @@ void SpectrogramDisplay::pushColumn(const std::array<float, SpectrumAnalyzer::nu
     const int lastX = w - 1;
     const float logMin = std::log10(minFreq);
     const float logMax = std::log10(maxFreq);
-    const float binWidth = static_cast<float>(sampleRate) / static_cast<float>(SpectrumAnalyzer::fftSize);
     const int numBins = SpectrumAnalyzer::numBins;
 
     for (int y = 0; y < h; ++y)

@@ -23,8 +23,19 @@ public:
 
     void process(juce::AudioBuffer<float>& buffer);
 
-    /** Compute magnitude response at a given frequency (for curve drawing). */
-    double getMagnitudeAtFrequency(double frequency) const;
+    /**
+     * Thread-safe magnitude response for curve drawing.
+     *
+     * Builds a throwaway coefficient set from the supplied parameter values
+     * on the calling (GUI) thread, so it never touches the audio thread's
+     * live filter state. Static on purpose — no shared mutable state.
+     */
+    static double magnitudeForParams(FilterType type,
+                                     double sampleRate,
+                                     float frequency,
+                                     float gainDB,
+                                     float q,
+                                     double atFrequency);
 
     bool isBypassed() const { return bypassed; }
     void setBypassed(bool b) { bypassed = b; }
@@ -37,7 +48,4 @@ private:
         juce::dsp::IIR::Filter<float>,
         juce::dsp::IIR::Coefficients<float>
     > filter;
-
-    // Keep a copy of current coefficients for magnitude response queries
-    juce::dsp::IIR::Coefficients<float>::Ptr currentCoefficients;
 };

@@ -231,13 +231,10 @@ void SpectrumDisplay::paint(juce::Graphics& g)
                 linePath.lineTo(normX * w, y);
         }
 
-        // Single clean stroke — no glow, just a precise line
-        // Subtle outer for antialiasing
-        g.setColour(Theme::col(Theme::accent).withAlpha(0.25f));
-        g.strokePath(linePath, juce::PathStrokeType(2.5f));
-
-        // Core line — warm amber, bright and precise
-        g.setColour(Theme::col(Theme::spectrumLine).withAlpha(0.85f));
+        // Shadow only — the bright jiggly line is intentionally omitted.
+        // A faint edge keeps the filled "shadow" from looking cut off,
+        // without the restless bright trace on top.
+        g.setColour(Theme::col(Theme::accent).withAlpha(0.12f));
         g.strokePath(linePath, juce::PathStrokeType(1.0f));
     }
 }

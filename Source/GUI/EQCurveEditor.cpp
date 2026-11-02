@@ -109,7 +109,6 @@ void EQCurveEditor::drawBandwidthIndicator(juce::Graphics& g, int bandIndex, flo
 
 void EQCurveEditor::drawPerBandCurve(juce::Graphics& g, int bandIndex, float w, float h)
 {
-    auto& band = processor.getBand(bandIndex);
     auto colour = juce::Colour(bandColours[static_cast<size_t>(bandIndex)]);
 
     juce::Path bandPath;
@@ -120,7 +119,7 @@ void EQCurveEditor::drawPerBandCurve(juce::Graphics& g, int bandIndex, float w, 
         float normX = static_cast<float>(px) / static_cast<float>(numPoints);
         float freq = xToFrequency(normX);
 
-        double mag = band.getMagnitudeAtFrequency(static_cast<double>(freq));
+        double mag = processor.getBandMagnitude(bandIndex, static_cast<double>(freq));
         float db = static_cast<float>(juce::Decibels::gainToDecibels(mag, -100.0));
         float y = dbToY(db);
         float x = normX * w;
